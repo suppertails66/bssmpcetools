@@ -1,0 +1,132 @@
+10,"j000","〔まこと〕","（ああ……いい天気だ
+こう天気がいいと","(Makoto)","(What a nice day. It's the kind that really puts you in a good mood.)",,"(What a nice day."
+11,,"〔まこと〕","なんだか気分まではずんでくるよなあ……）","(Makoto)",,,"It really puts you in a good mood.)"
+12,"j001","〔まこと〕","（こんな日は……）","(Makoto)","(On a day like this...)",,"(On a day like this...)"
+13,"j002","〔まこと〕","（へへっ……
+へへへっ……）","(Makoto)","(Heheh...Heheheh...)",,"(Heheh... Heheheh...)"
+14,"j003","〔うさぎ〕","まーこちゃん！","(Usagi)","Mako+-chan++!",,"Mako-chan!"
+15,"j004","〔まこと〕","うさぎちゃん？　どうしたんだい、そんなにあわてて","(Makoto)","Usagi+-chan++? What's up? You sure were in a rush there...",,"Usagi-chan? What's up? You were rushing..."
+16,"j005","〔うさぎ〕","えへへ……ちょっとね","(Usagi)","*giggle* Oh, it's nothing.",,"*giggle* Oh, it's nothing."
+17,"j006","〔うさぎ〕","でもどーしたの？","(Usagi)","What about you?",,"What about you?"
+18,,"〔うさぎ〕","なんだかボンヤリしてたみたいだけど？","(Usagi)","You look all misty-eyed.",,"You look lost in thought."
+19,,,"無視する",,"Ignore",,"Ignore"
+20,,,"考える",,"Think",,"Think"
+21,,,"こたえる",,"Answer",,"Answer"
+22,,"〔まこと〕","（そんなにボンヤリしてたのかな？　あたし）","(Makoto)","(Was it that obvious?)",,"(Was it that obvious?)"
+23,,"〔うさぎ〕","まこちゃん？","(Usagi)","Mako+-chan++?",,"Mako-chan?"
+24,,"〔まこと〕","……………………………………やっだあっ、もうっ！","(Makoto)","......Oh my gosh!",,"......Oh my gosh!"
+25,,"〔うさぎ〕","ま、まこちゃん？","(Usagi)","M-Mako+-chan++?",,"M-Mako-chan?"
+26,"p006","〔まこと〕","……いや、今日は朝から不思議な気分なんだ","(Makoto)","You see, something feels different this morning.",,"You see, something feels different this morning."
+27,,"〔まこと〕","なんだか胸がドキドキして……","(Makoto)","I'm very excited for some reason...",,"I'm very excited for some reason."
+28,"p007","〔うさぎ〕","おおっ！？","(Usagi)","My, oh my!",,"My oh my!"
+29,,"〔うさぎ〕","それってもしかして、恋の予感ってヤツじゃないの？","(Usagi)","Could this be...LOVE?",,"Could this be...LOVE?"
+30,"p008","〔まこと〕","え……やだな、そんなことないよ","(Makoto)","Huh? No way. Couldn't be...",,"Huh? No way, that can't be."
+31,"p009","〔うさぎ〕","でもいーなー。私にはそんなの全然ないよ","(Usagi)","It must be nice to feel that way.
+It never happens to me.",,"It must be nice to feel that way.
+It never happens to me."
+32,"p010","〔まこと〕","何いってんだい","(Makoto)","What are you talking about?",,"What are you talking about?"
+33,,"〔まこと〕","うさぎちゃんには、衛さんがいるじゃないか","(Makoto)","Don't you have Mamoru+-san++, Usagi+-chan++?",,"Don't you have Mamoru-san, Usagi-chan?"
+34,"p011","〔うさぎ〕","えーっ。へー。やだよお…","(Usagi)","Oh, well, you know...Heheh...",,"Oh well, you know, heheh..."
+35,"p012","〔レイ〕","まこちゃーん。うさぎー","(Rei)","Mako+-chan++! Usagi!",,"Mako-chan! Usagi!"
+36,"p013","〔うさぎ〕","レイちゃん、美奈子ちゃん","(Usagi)","Rei+-chan++! Minako+-chan++!",,"Rei-chan, Minako-chan."
+37,"p014","〔まこと〕","えっ！？特訓？
+今日これから？","(Makoto)","Huh?! Special training?!
+Like, today?",,"Huh?! Special training?!
+Like, today?"
+38,"p015","〔レイ〕","そうなのよ、急に……勝手だと思わない？","(Rei)","Yeah, that's what he said.
+He's so selfish.",,"Yeah, that's what he said.
+He's so selfish."
+39,"p016","〔美奈子〕","だから、アルテミスには悪いけど、","(Minako)","That's Artemis for you.",,"That's Artemis for you."
+40,,"〔美奈子〕","知らんぷりしてさぼっちゃおー！　って話してたのよ","(Minako)","So here's the plan: we'll pretend we didn't know about it and go have some fun!",,"So here's the plan: we'll pretend we didn't know about it and go have some fun!"
+41,,"〔まこと〕","うーん、どうしようかな？","(Makoto)","Hmm...What should I do?",,"Hmm, what should we do?"
+42,,,"考える",,"Think",,"Think"
+43,,,"さんせいする",,"Agree",,"Agree"
+44,,,"うさぎに聞く",,"Ask Usagi",,"Ask Usagi"
+45,,"〔まこと〕","（バレるとまずいけど……特訓もやだなあ）","(Makoto)","(It would be bad if we got caught...
+But I really don't feel like training today.)",,"(It would be bad if we get caught...
+But I really don't feel like training today.)"
+46,,"〔まこと〕","あたしもレイちゃんたちにさんせいだけど……","(Makoto)","Well, generally speaking, I'm on board with what you're saying...",,"Generally speaking, I agree with what you're saying..."
+47,,"〔レイ〕","さすが、まこちゃん","(Rei)","That's our Mako+-chan++.",,"That's our Mako-chan."
+48,,"〔まこと〕","うさぎちゃんはどう思う？","(Makoto)","What do you think, Usagi+-chan++?",,"What do you think, Usagi-chan?"
+49,,"〔うさぎ〕","それいい！
+さんせーー！","(Usagi)","Of course I agree!",,"Of course I agree!"
+50,,"〔うさぎ〕","サボっちゃおーーっ！","(Usagi)","It's skippin' time!",,"It's skippin' time!"
+51,"p017","〔うさぎ〕","あっ、でもそんじゃ亜美ちゃんもさそってあげなきゃ","(Usagi)","Oh, but we have to tell Ami+-chan++ too!",,"Oh, but we have to tell Ami-chan too!"
+52,"p018","〔まこと〕","亜美ちゃんか、そういえばさっき会ったけど","(Makoto)","Ami+-chan++? Actually, I saw her earlier.",,"Ami-chan? Actually, I saw her earlier."
+53,,"〔まこと〕","図書室に行くとか言ってたな","(Makoto)","She said she was going to the library.",,"She said she was going to the library."
+54,"p019","〔美奈子〕","じゃ、まだ学校にいるのね","(Minako)","So, she's still at school.",,"So, she's still at school."
+55,"p020","〔レイ〕","それじゃ話ははやいわ","(Rei)","Perfect.",,"Perfect."
+56,,"〔レイ〕","もどって亜美ちゃんもさそいましょう！","(Rei)","Let's go back to school and ask Ami+-chan++ to join us!",,"Let's go back to school and ask Ami-chan to join us!"
+57,"p021","〔うさぎ〕","え……？","(Usagi)","Uhhh...",,"Uhhh..."
+58,"p022","〔レイ〕","どうしたの？","(Rei)","What's wrong?",,"What's wrong?"
+59,"p023","〔うさぎ〕","いや……ちょっと……それは……まずい……な","(Usagi)","That, uhmm...
+That might not be such a good idea...?",,"That, uhmm...
+That might not be such a good idea...?"
+60,"p024","〔三人〕","？","(All Three)","Huh?",,"Huh?"
+61,"p025","〔うさぎ〕","だから……その……あの…","(Usagi)","Well...You see...",,"Well... You see..."
+62,"p026","〔レイ〕","何よ、何かくしてるのよ？","(Rei)","Just spit it out already!",,"Just spit it out already."
+63,"p027","〔美奈子〕","そういえば、うさぎちゃん","(Minako)","Come to think of it, I thought I saw Naru+-chan++ waiting at the school gate.",,"Come to think of it,"
+64,,"〔美奈子〕","校門のところでなるちゃんを見かけたけど、","(Minako)",,,"I think I saw Naru-chan waiting at the school gate."
+65,,"〔美奈子〕","あれってうさぎちゃんを待ってたんじゃないの？","(Minako)","Was she waiting for you, Usagi+-chan++?",,"Was she waiting for you, Usagi-chan?"
+66,"p028","〔うさぎ〕","げっ！！","(Usagi)","GEH!",,"Geh!"
+67,"p029","〔レイ〕","どーやらそれに関係ありそうね……","(Rei)","Looks like you're on to something.",,"Looks like you're on to something."
+68,,,"うさぎをかばう",,"Stand up for Usagi",,"Stand up for Usagi"
+69,,,"うさぎに聞く",,"Ask Usagi",,"Ask Usagi"
+70,,,"だまって見ている",,"Don't say anything",,"Don't say anything"
+71,,"〔まこと〕","レイちゃん、そんなにキツく聞かなくたって……","(Makoto)","Come on, Rei+-chan++, you don't have to be so hard on her.",,"Come on Rei-chan, you don't have to be so hard on her."
+72,,"〔うさぎ〕","まこちゃん、やさしい……","(Usagi)","You're so kind, Mako+-chan++...",,"You're so kind, Mako-chan..."
+73,,"〔まこと〕","で、なにをかくしてるの？","(Makoto)","Mmm.
+So, what are you hiding?",,"Yeah yeah.
+So, what are you hiding?"
+74,,"〔うさぎ〕","うっ……","(Usagi)","Uhh...",,"Uhh..."
+75,,"〔まこと〕","なんかあるの？
+うさぎちゃん","(Makoto)","You know something we don't, Usagi+-chan++?",,"You know something we don't, Usagi-chan?"
+76,,"〔うさぎ〕","いや、その……","(Usagi)","Uhmm...W-Well...",,"Uhmm... W-Well..."
+77,,"〔レイ〕","ま、どーせロクでもないことなんだろうけど","(Rei)","Knowing her, it's probably nothing good.",,"Knowing her, it's probably nothing good."
+78,,"〔うさぎ〕","ひっどーい！！","(Usagi)","Hey, that's not true!",,"Hey, that's not true!"
+79,,"〔レイ〕","じゃ、言ってみなさいよ","(Rei)","Then prove me wrong and tell us already!",,"Then prove me wrong and tell us already."
+80,,"〔うさぎ〕","う～～～っ……
+あう～～っ","(Usagi)","Weeell...",,"Weeell..."
+81,,"〔うさぎ〕","なるちゃんには私なんかよりもっとステキな人が","(Usagi)","You see...",,"You see..."
+82,,"〔うさぎ〕","待ってるのよ！","(Usagi)","Naru+-chan++ is waiting for someone wonderful!",,"Naru-chan is waiting for someone wonderful!"
+83,,"〔美奈子〕","だれ？　ステキな人って？","(Minako)","Someone wonderful, you say?",,"Someone wonderful, you say?"
+84,,"〔うさぎ〕","その名は！","(Usagi)","His name is―!",,"His name is―!"
+85,,"〔美奈子〕","その名は！？","(Minako)","His name is...?",,"His name is...?"
+86,,"〔うさぎ〕","……んー、でもただで教えるってのもなー……","(Usagi)","Hmm, I'm not sure I should say...",,"Hmm, I'm not sure I should say..."
+87,,"〔レイ〕","うぅさぁぎぃ……","(Rei)","Uuusaaagiii...",,"Uuusaaagiii..."
+88,,,"おどす",,"Get cranky",,"Get cranky"
+89,,,"おだてる",,"Try flattery",,"Try flattery"
+90,,,"無視する",,"Just drop it",,"Just drop it"
+91,,"〔まこと〕","なんだよ、あたしたちには教えられないってのかい？","(Makoto)","So it's something you CAN'T tell us?
+Is that how it is?",,"So it's something you CAN'T tell us?
+Is that how it is?"
+92,,"〔うさぎ〕","ま、まこちゃん、そんな顔しなくても……","(Usagi)","D-Don't look at me like that, Mako+-chan++...",,"D-Don't look at me like that, Mako-chan..."
+93,,,"さらにおどす",,"Get crankier",,"Get crankier"
+94,,,"おだてる",,"Try flattery",,"Try flattery"
+95,,,"無視する",,"Just drop it",,"Just drop it"
+96,,"〔まこと〕","だったら、教えてくれたっていいじゃないか","(Makoto)","Then you'd better start talking.",,"Then you'd better start talking."
+97,,"〔うさぎ〕","わ、わかったわよ
+おほん。その人の名は……","(Usagi)","A-Alright, alright.
+*ahem* I'm talking about...",,"A-Alright, alright.
+*ahem* I'm talking about..."
+98,,"〔まこと〕","……でも、さすがはうさぎちゃんだね","(Makoto)","...I have to say, that was very nice of you, Usagi+-chan++.",,"...I have to say, that was very nice of you, Usagi-chan."
+99,,"〔まこと〕","なるちゃんに気をつかってあげてるんだから","(Makoto)","You must really care for Naru+-chan++.",,"You must really care for Naru-chan."
+100,,"〔うさぎ〕","え？　そ、そうかな……","(Usagi)","Huh? Yeah, I guess that's true.",,"Huh? Yeah, I guess that's true."
+101,,"〔まこと〕","よっ、恋のキューピット！！","(Makoto)","Way to go, you cupid, you!",,"Way to go, you cupid you!"
+102,,"〔うさぎ〕","あ、あはははは！！","(Usagi)","Ahahahahah!",,"Ahahahahah!"
+103,,"〔うさぎ〕","もう、しょうがないわねぇ教えてあげる！！","(Usagi)","Alright, alright, I guess I can tell you!",,"Alright alright, I guess I can tell you!"
+104,,"〔美奈子〕","（ナイスよ、まこちゃん）","(Minako)","(Nice work, Mako+-chan++.)",,"(Nice work, Mako-chan.)"
+105,,"〔うさぎ〕","おほん、その人の名は……","(Usagi)","*ahem* I'm talking about...",,"*ahem* I'm talking about..."
+106,,"〔まこと〕","教えてくれないんならいいよ、本人に聞くから","(Makoto)","Oh well, I'll just ask Naru+-chan++ when I see her.",,"Oh well, I'll just ask Naru-chan when I see her."
+107,,"〔うさぎ〕","あーっ！！　待って！！","(Usagi)","AHH! Wait!",,"Ah! Wait!"
+108,,"〔うさぎ〕","しょうがない、その人は…","(Usagi)","Alright, I'll tell you!
+I'm talking about...",,"Alright, I'll tell you!
+I'm talking about..."
+109,"p031","〔うさぎ〕","じゃーん！！
+海野ぐりおくんでーす","(Usagi)","Gurio Umino+-kun++!",,"Gurio Umino-kun!"
+110,"p032","〔３人〕","げっ……","(All Three)","Geh...",,"Geh..."
+111,"p033","〔レイ〕","う…海野…くん？","(Rei)","U-Umino+-kun++...?",,"U-Umino-kun...?"
+112,,"〔レイ〕","うさぎあんた、どっかおかしいんじゃないの？","(Rei)","Are you sure you're feeling alright, Usagi?",,"Are you sure you're feeling alright, Usagi?"
+113,"p034","〔うさぎ〕","や、やーねー！　私にとって、じゃなくて","(Usagi)","Hey now! I didn't mean from MY perspective!",,"Hey now! I didn't mean from MY perspective!"
+114,,"〔うさぎ〕","なるちゃんにとってステキな人ってことよん","(Usagi)","He's someone wonderful for NARU+-CHAN++!",,"He's someone wonderful for Naru-chan!"
+115,"p035","〔レイ〕","何よそれ？","(Rei)","I don't get it.",,"I don't get it."

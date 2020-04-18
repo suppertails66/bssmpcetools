@@ -1,0 +1,23 @@
+#******************************************************************************
+# Naru ending scroll tilemap generator script
+#******************************************************************************
+
+[Properties]
+palette=rsrc_raw/pal/ending_naru_scroll.pal
+#freepalettes=10/2-14 11/2-14 12/2-14 13/2-14 14/2-14
+dest=out/grp/ending_naru_scroll.bin
+#paldest=out/pal/punish.pal
+loadAddr=0x100
+#minTiles=0x185
+maxTiles=0x680
+#blacklist=360-363
+
+#******************************************************************************
+# Main layout
+#******************************************************************************
+
+[Tilemap00]
+source=rsrc/ending_scroll/naru.png
+dest=out/maps/ending_naru_scroll.bin
+transparency=0
+

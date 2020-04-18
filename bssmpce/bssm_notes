@@ -1,0 +1,754 @@
+
+basic:
+  tracks 01-23 = audio
+  track 24 = data
+  *** ALL DATA IS MIRRORED AT (addr + 0x69E5800)! ***
+      (cd access optimization?)
+    69EB000 = end of real data
+    6A0E800 = disc index repeat (from 29000)
+    specifically:
+      first 5800 bytes (boot sector) are unique
+      0-69E5800 is repeated at 69E5800-D3CA800
+      
+  startup:
+    0x1000-0x2000 => F8:1000 (0x3000)
+    0x2000-0x7800 => 80:0000 (0x4000) = CD RAM 0x0 = physical 0x100000
+    MPR configuration:
+      MPR0: FF
+      MPR1: F8
+      MPR2: 80
+      MPR3: 81
+      MPR4: 82
+      MPR5: 83
+      MPR6: 84
+      MPR7: 00
+    execution starts at 0x3000 (JMP 6FAA)
+
+data:
+  29000 = "module table" of 7b structs identifying stuff on the disc
+    see 3E40
+    struct format:
+      3b identifier
+        * this is a hash of the actual filename. for some ungodly reason,
+          the game references files by their real names in scripts and actually
+          calculates the hash in order to look them up in the table.
+          the hash is computed as follows (see 5656):
+            byte 0:
+              (((name[0] & 0x0F) << 4) | (name[1] & 0x0F))
+            byte 1:
+              hashbyte = 0xFF
+              if (name has a '.' in it, at position X)
+                hashbyte = (((name[X - 2] & 0x0F) << 4) | (name[X - 1] & 0x0F))
+              if (hashbyte == 0xFF)
+                hashbyte = (((name[size - 2] & 0x0F) << 4) | (name[size - 1] & 0x0F))
+            byte 2:
+              8-bit sum of all characters in string, including '.' if present,
+              with all lower case letters converted to upper case
+        * to load a module, the identifier is placed somewhere in memory
+          and a linear search is performed to match it against this list
+      2b record number (highest byte is skipped in code and assumed zero)
+      1b "byte1"
+      1b "byte2"
+        * normally, (byte2 / 8) == number of records to load - 1
+        * if ((byte2 & 0x07) == 0), and (byte1 == 0), then don't add 1 to the
+          calculation above
+
+file notes:
+  bad files references:
+    // this file does not exist, but is referenced in a playSound
+    // op in mako08.mes -- programming error?
+    if (it->first.compare("se00") == 0) {
+    
+    }
+    // ditto this in mako05.mes
+    else if (it->first.compare("j165") == 0) {
+    
+    }
+  
+  unused files? not referenced, at least by name, in any script
+    (the strings do not even occur in the ISO, regardless of capitalization)
+      1DE4C1 amiend.mes
+      25E4CA reiend.mes
+      D1E412 makoend.mes
+      D941FF minend1.mes
+      D94200 minend2.mes
+    these appear to be the only "unnamed" scripts
+    which still leaves 441 unreferenced files
+  
+  429000 = ?????????? not in index!!
+    this appears to be a different version of usagi03.mes
+    contains some differences from "real" version, e.g. function 1F is
+      defined to an actual routine instead of just a ret
+
+message files:
+  2b size of dictionary
+  dictionary:
+    2b SJIS codepoints
+    scripts can activate some sort of 8-bit mode (bit 3 of 32B0 set) in which
+      each byte of script data indexes into this table
+  script data (script begins running from start of data?)
+
+scripting system:
+  00: ret
+      Terminates interpreter loop (used for subscripts)
+  01: callImmed
+      Calls the subscript immediately following scriptptr. When it finishes
+      running, scriptptr is advanced past the embedded subscript.
+  02: ret
+      Same as 00. However, it won't count toward the ret count for the script
+      skipping routine -- is this actually used?
+  04: func XX
+      Subtract 0x10 from the parameter byte to get the index of a routine to
+      call from the table at 6123.
+      Subops:
+        10: ifThenWhileNot2?
+          // run a type2 script
+          // if result zero, skip embedded script and finish
+          // otherwise, run embedded script
+          //   - if script returns 2, finish
+          //   - otherwise, restore initial scriptptr and loop to start
+          
+          start:
+            result = runType2Script()
+            if (result) {
+              oldScriptptr = scriptptr
+              result = runScript()
+              scriptptr = oldScriptptr
+              
+              if (result == 2) {
+                skipScript()
+                break
+              }
+              else {
+                goto start
+              }
+              
+            }
+            else {
+              skipScript()
+            }
+            
+        11: return01
+            Sets F8 to 01 and breaks interpreter loop.
+        12: return02
+            Sets F8 to 02 and breaks interpreter loop.
+        13: 
+            ?
+            skipScript()
+            switches among some script threads??
+        14: 
+            ?
+            generate locals
+            ...
+        15: printNumber?
+            generate locals
+            arg0 = number to print?
+            ...
+        16: 
+            palette ops?
+            generate locals
+            dispatch on arg0
+              00 = bg/sprites on
+                   (also default case for 04+)
+              01 = bg/sprites off
+              02 = refresh vce palette from ram ($26A4)
+                   - if arg1 provided, fill palettes with that color first
+              03 = palette fade
+                   - if arg1 provided, fade to that color
+                   - otherwise, fade to the current palette ($26A4)
+        17: 
+            ?
+            generate locals
+            call something with param 00
+            ...
+        18: 
+            ?
+            generate locals
+            call something with param 01
+            ...
+        19: 
+            ?
+            generate locals
+            call something with param 02
+            ...
+        1A: 
+            ?
+            generate locals
+            if bit 1 of 32B6 is unset, done
+            otherwise, dispatch on local0; various ADPCM commands?
+        1B: 
+            ?
+            generate locals
+            something with ~2624
+        1C: loadFile
+            generate locals
+            local0 = filename
+            local1 = load address in "back memory"
+            ...
+        1D: 
+            ?
+            clear 26A3
+            set 32F1 to #32F3
+            generate locals
+            if local2 != 0, load file from local0
+            ...
+        1E: loadAndRunFile?
+            generate locals
+            local0 = filename
+            skip past dictionary and set scriptptr to script start
+            continue interpretation from new script
+        1F: loadAndCall?
+            generate locals
+            loads a script file, runs it, and then loads the orignal
+              script file and resumes execution where it left off?
+        20: 
+            ?
+            generate locals
+            26A1 = local0
+            26A0 = FF
+        21: backUpMemoryOps?
+            generate locals
+            dispatch on local0 to various backup memory R/W routines
+        22: 
+            generate locals
+            ...
+            load file?
+        23: playVoice?
+            stop ADPCM
+            generate locals
+            ...
+            possibly transfer data from CD to ADPCM buffer (based on a filename)
+        24: 
+            generate locals
+            dispatch on local0
+            ...
+        25: generateLocals
+        26: sets up a script called every frame? (pointer: 32F1)? animation?
+            ?
+            generateLocals
+            32F1 = local0 (script?)
+              see 5EAC
+  06: ?
+      ++scriptptr, then advances scriptptr past the next occurence of 06 in
+      the script, doing something with each non-06 character up to that point.
+        
+  09-1F: func2
+         All of these values are handled identically:
+         Subtract 0x0A from the raw op to get the index of a routine to
+         call from the table at 6101.
+         Subops:
+            09: ??? shouldn't work???
+            0A: writeNybblesLiteral
+                1. Read type2 literal n
+                2. Run type2 script; AND the return value with 0x0F
+                3. Set the nth script data nybble to result from (2)
+                4. If next script byte is 02, advance scriptptr past it,
+                   increment n, and go to step 2
+            0B: writeNybbles
+                  nybbleIndex = runType2Script()
+                  do {
+                    value = runType2Script()
+                    nybbleArray[nybbleIndex] = value
+                    ++nybbleIndex
+                  } while (next() == 2)
+            0C: writeValueWord
+                  index = (next() - 0x40)
+                  value = runType2Script()
+                  wordArray[index] = value
+            0D: writeArrayWords
+                  index = (next() - 0x40)
+                  arrayAddr = wordArray[index]
+                  targetAddr = arrayAddr + runType2Script()
+                  do {
+                    value = runType2Script()
+                    *targetAddr = value
+                    targetAddr += 2
+                  } while (next() == 2)
+            0E: writeArrayBytes
+                  index = (next() - 0x40)
+                  arrayAddr = wordArray[index]
+                  targetAddr = arrayAddr + runType2Script()
+                  do {
+                    value = runType2Script()
+                    *targetAddr = value
+                    ++targetAddr
+                  } while (next() == 2)
+            0F: if(?)
+                  start:
+                    result = runType2Script()
+                    if (result != 0) {
+                      ++scriptptr
+                      result = runScript()
+                      
+                      do {
+                        if (next() != 2) break
+                        if (result != 0) END_SCRIPT
+                        skipScript()
+                      } while (next() != 2)
+                      
+                    }
+                    else {
+                      skipScript()
+                      if (next() != 2) break
+                      
+                      ++scriptptr
+                      if (next() == 0x0F) {
+                        ++scriptptr
+                        goto start
+                      }
+                      else {
+                        ++scriptptr
+                        result = runScript()
+                        if (result != 0) END_SCRIPT
+                        else break
+                      }
+                    }
+            10: generateLocalDefinitions
+                see code at 5EEB, arrays at 2633 and 263D
+                returns the value of the first local (from 263D-263E) in F8-F9
+                
+                Reads a sequential series of data structures and generates
+                  arrays with pointers to them and their types.
+                  Overwrites previous results from using this op.
+                  Max number of simultaneous structures is 0xA.
+                
+                1. Get script byte
+                  01 = embedded script
+                  06 = string
+                  other = "special"
+                    a. if next byte is not one of the following values
+                       (the type2 script commands), terminate all processing:
+                         07
+                         08
+                         09
+                         20-5A (inclusive)
+                    b. run a type2 script starting at position of value
+                       (see 6173)
+                    c. return value from script is data
+                2. If next script byte is 02, there is more data; otherwise,
+                   done
+            11: 
+                ? adpcm?
+                generate locals, then do something
+            12: setFunction
+                Sets up a pointer to a script so it can be accessed with
+                callFunction.
+                Parameter 1: Index number to assign function to
+                Parameter 2: Local (script) to associate with index.
+                  result = generateLocals()
+                  targetWord = (result * 2) + 0x6662
+                  *targetWord = local1
+                  
+            13: callFunction
+                Calls the script pointed to by the Nth word in array at 6662.
+                  result = generateLocals()
+                  curScriptPtr = scriptptr
+                  targetWord = (result * 2) + 0x6662
+                  scriptptr = *targetWord
+                  ++scriptptr
+                  runScript()
+                  scriptptr = curScriptPtr
+            14: genLocsAndCallScript
+                  result = generateLocals()
+                  curScriptPtr = scriptptr
+                  scriptptr = result
+                  runScript()
+                  scriptptr = curScriptPtr
+            15: 
+                ?
+                  generates locals
+                  ... extremely fucking long ...
+                  runs hardcoded script at 0x2655
+            16: 
+                delay X frames?
+                  generates locals and does something with ADPCM?
+            17: 
+                clears text box
+                  generates locals and ???
+                  based on value of 32C4 (set with e.g. op 18)
+            18: 
+                ?
+                  generates locals and writes result (local0) to 32C4
+            19: 
+                assorted operations?
+                first param determines effect and further params.
+                  generates locals
+                  dispatches on value of result (local0)
+                    00 = CD playback stuff??
+                    01 = CD stop??
+                    ...
+                    04 = transfer to vram?
+                         param 1 = src (in mem buf?)
+                         param 2 = size * 2?
+                         param 3 = vram dst * 2?
+                    05 = treated same as 0x11 or greater
+                    06 = copy raw-format palette(s) to local copy in RAM
+                         param 1 = src (in current backmem)
+                         array word $21 = bitfield of palettes to copy:
+                                          bit 0 = set to copy first palette
+                                          bit 1 = set to copy second palette
+                                          etc.
+                         array word $23 = index of first palette
+                                          0 = first bg palette
+                                          $10 = first sprite palette
+                    08 = transfer sprite table from VRAM $1000 to SATB
+                    0A = set scrolling?
+                         param 1 = x?
+                         param 2 = y?
+                    0C = ?
+                    0E = load bitmap-format 15-bit palette (bg only) to RAM
+                         - same arg format as 06
+                  
+            1A: ?
+                  generates locals
+                    - local0 = subop?
+                    - local1 = index into 16-byte structs at 675C?
+                  writes first 4 local values to F8, FA, FC, FE
+                  calls 67FD:
+                    arg3 = (arg1 * 16) + 675C
+                    dispatch on arg0
+            1B = 04 subop 10
+            1C = 04 subop 11
+            1D = 04 subop 12
+            1E = 04 subop 13
+            1F = 04 subop 14
+                  
+                      
+  60-7F: First byte of a SJIS literal. Add 0x20 to this to get the high
+         byte; the next byte in the script is the unaltered low byte.
+  80+:   If bit 3 of 32B0 is set, this is the first byte of a SJIS literal
+         (no correction required).
+         If bit 3 of 32B0 is unset, this is a 1-byte dictionary index. Print
+         the dictionary entry corresponding to this value.
+  
+  Ops 03, 05, 07, and 08 do nothing.
+
+"type2" script:
+  Runs stack-based VM arithmetic, returning a 16-bit result value in F8-F9.
+  03: ret
+      Two result bytes are pulled from stack and written to F8-F9.
+  07: pushShort
+        Pushes (nextbyte >> 2).
+        This and the other ops for pushing embedded constants have contrived
+          to avoid using the values 00 and 01, which would break the linear
+          search-based script skipping function, by using only the high six bits
+          of each byte and shifting the values into place in code.
+          Thus a short is 6 bits, an int is 12 bits, and a long is 18 bits
+          (truncated to 16 bits).
+  08: pushInt
+        int result = 0;
+        result |= (get() >> 2) << 8;
+        result |= get();
+        result >>= 2;
+  09: pushLong
+        int result = 0;
+        result |= (get() >> 2) << 16;
+        result |= get() << 8;
+        result >>= 2;
+        result |= get();
+        result >>= 2;
+        result &= 0xFFFF;
+  20-2F (inclusive):
+      Subtract 0x20 and call corresponding entry from jump table at 6153.
+        20: add
+            Pull two words off of stack, add first to second, push result.
+        21: subtract
+            Pull two words off of stack, subtract first from second, push
+            result.
+        22: multiply (unsigned)
+            Pull two words off of stack, multiply first by second (unsigned),
+            push result.
+        23: divide (signed)
+            Pull divisor then dividend from stack, divide, and push quotient.
+        24: remainder (signed)
+            Pull divisor then dividend from stack, divide, and push remainder.
+        25: or
+            Pull two word arguments, OR, push result.
+        26: and
+            Pull two word arguments, AND, push result.
+        27: eq
+            Pull two word arguments. If equal, push 0001; otherwise, push 0000.
+        28: neq
+            Pull two word arguments. If not equal, push 0001; otherwise, push
+            0000.
+        29: lt
+            Pull arg1, then arg2. If (arg1 < arg2), return 0001; else return
+            0000.
+        2A: gt
+            Pull arg1, then arg2. If (arg1 > arg2), return 0001; else return
+            0000.
+        2B: readWordArray
+            Pull arg1, then arg2. Use arg1 as an index into the word array
+            pointed to by arg2, returning the word at that address.
+        2C: readWordArrayByte
+            Pull arg1, then arg2. Use arg1 as an index into the word array
+            pointed to by arg2, returning the low byte of the word at that
+            address.
+        2D: literalNybbleArrayRead
+            Reads a literal from the script (in same format as others in this
+            section), then uses that as an index into the nybble array at 3068.
+            If low bit of literal is set, the low nybble is returned; otherwise,
+            the high nybble is returned (shifted into the low position).
+        2E: readTheNybbleArray
+            Pulls a word from the stack, then uses that as an index into the
+            nybble array at 3068.
+            If low bit of literal is set, the low nybble is returned; otherwise,
+            the high nybble is returned (shifted into the low position).
+        2F: rand
+            Reads a literal from the script (in same format as others in this
+            section) as arg1.
+            The word value at 6151 is then multiplied by 5 and incremented by 1,
+            then written back to 6151. This value is divided by arg1 and its
+            remainder returned, yielding a value from zero to (arg1 - 1),
+            inclusive.
+  30-3F (inclusive):
+      Pushes (opcode - 0x30).
+  40-5A (inclusive):
+      Get ((opcode - 0x40) << 1), add 0x3268, and push the word at that address.
+  
+internal function reference:
+  2 = ? animation?
+  3 = trigger lip flap animation.
+      plays an animation (2 frames?) that continues until the current
+      ADPCM clip ends.
+  4 = wait for sub-line button press.
+      when a single voice clip spans multiple text boxes,
+      this is used between boxes to allow the player to press
+      a button to advance while the clip is still playing.
+  5 = play currently selected PSG music track
+  6 = redraw appropriate HUD for current character/event
+  7 = redraw main img window with grp data from $4000?
+  8 = ?
+  9 = redraw entire screen with grp data from $4000?
+  
+  C = wait for button press at end of box.
+      if a sound clip is playing, forces player to wait until
+      it has finished, unless bit 1 of 32B6 is set (by using
+      cheat on title screen).
+  
+  11 = ?
+  12 = ?
+
+memory:
+  2228 = flags? adpcm?
+  2286 = *** palette block transfer routine ***
+         this is not present in the file; apparently gets loaded at some point
+  2620 = ? add various values to get base of an MPR set?
+    * see 368E and below
+  2621 = stack pointer?
+  2622 = current script position pointer
+  2624 = ?
+  2626 = ?
+  2633 = array of 1b types for values in array at 263D (max 0xA entries)
+         Types:
+           01 = int value from result of type2 script?
+           02 = string
+           03 = subscript
+  263D = array of 2b values corresponding to types in array at 2633
+    263F = ADPCM playback buffer starting address?
+    2641 = ADPCM "number of playback size byte"?
+  2660 = sometimes pointer to target module name
+  2666 = ? array??
+  2684 = ? MPR storage?
+  26A0 = ?
+  26A1 = "alternate" script?
+  26A3 = ?
+  26A4 = 0x400-byte "target" palette?
+         zeroed out for fades, etc.
+  2AA4 = 0x400-byte "true" palette?
+  305B = storage for filename hash when loading
+  3068 = script data array
+  3268 = *** array of wordarray pointers ***
+         actually, just script words in general
+  329E = start of array 0 = "globals"?
+  32AA = ? MPRs? see 3684
+    * if 1, add #$C to $2620 to get base page;
+      otherwise, add #$11
+  32AC = ? MPRs of "back memory" for loaded files?
+    * see 3619
+  32B0 = flags?
+    * bit 3 = if set, use 1b dictionary encoding? -- see 495D
+  32B6 = ? flags? ADPCM?
+  32B4 = use to reset printing pixel x-pos (32C0)?
+  32B6 = flags
+         - bit 1 = set to enable text skip
+  32BA = use to reset printing pixel y-pos (32C2)?
+  32BC = maximum pattern x before auto-newline?
+  32C0 = printing x-position in pixels (screen-absolute?)
+    * low 3 bits  = number of pixels to right-shift text before printing
+    * high 5 bits = ?
+  32C2 = printing y-position in pixels (screen-absolute?)
+    * low 3 bits  = ?
+    * high 5 bits = ?
+  32C4 = ?
+    * low 4 bits (at least): if set, use byte in conversion from 1bpp?
+  32C7 = ?
+  32C8 = text printing pixel y-pos
+  32D0 = ?
+  32D4 = ?
+  32DC = ??? "number of records"
+    * see 3F19
+  32DD = ??? "number of records"
+    * see 3F19
+  32DE = dstaddr for CD load commands?
+    * see 4966
+  32F0 = if 00, "alternate" script 2 should not run?
+  32F1 = address of "alternate" script 2?
+    see 5EAC
+  32F6 = ADPCM controller status?
+  6632 = ?
+  6633 = CD start pos high?
+  6634 = CD start pos mid?
+  6635 = CD start pos low?
+  6636 = CD end pos high?
+  6637 = CD end pos mid?
+  6638 = CD end pos low?
+  6639 = CD play mode?
+  6662 = script-defined function pointer array
+  66AE = ? scriptptr can get copied from here by e.g. 04 subop 13
+  66B0 = ? 
+  66B2 = ? scriptptr can get copied to here by e.g. 04 subop 13
+  675C = series of 16-byte structs accessed through certain script opcodes
+  7200 = buffer for current scene stuff? text?
+
+routines:
+  3CFF = palette transfer?
+  3D26 = palette transfer for non-fades
+  3E36 = load "module" from CD?
+    * FA = destination
+    * FE = pointer to hashed filename to be matched in 7-byte structs at 4000
+  3F24 = load data from CD (BIOS routine 03)
+    * 2685-2687 = source address (H-M-L)
+    * 2688 = number of records
+    * 2689-268A = dst address (L-H)
+  40B0 = call BIOS kanji print routine (E060)
+    20F8 = character code
+    20FA = dst = 4090
+    20FF = mode = 01 for 12x12
+  482F = advance scriptptr past next embedded script
+    -- scriptptr seeks past next 01, which is assumed to be start of script
+  49AC = fetch and print (or ???) next character?
+  49EF = print character
+    * F8-F9 = SJIS ID
+  590E? = start scene??
+  6101 = jump table for script op 09-1F subops
+    * 0x11 entries total? (subtract 0x0A from parameter to get index)
+    * see 4895
+    * op 0x19 == 3303??
+  6123 = jump table for script op 04 subops
+    * 0x28 entries total? (subtract 0x10 from parameter to get index)
+    * see 48BC
+    * op 0x27 == 8801??
+  6153 = jump table for type script subops 20-2F
+    * 0x10 entries total? (subtract 0x20 from parameter to get index)
+    * see 6251
+  6173/617D = interpreter for "type2" script command set??
+
+449C08E = 今日?????
+
+M*** = music files (see script function 5)
+
+images:
+  see script-defined function 7 in (all?) files
+    0x4 bytes:
+      * 1b ? usually 0
+      * 1b ? usually 0
+      * 1b graphic width in patterns
+      * 1b graphic height in patterns
+    0x200 bytes: palettes
+      * these use 5-bit color components in format XGGGGGRRRRRBBBBB, which are
+        truncated to actual 3-bit system colors
+    (w * h) bytes: ??? usually all zeroes? palette number/byte for each
+      tile?
+    (w * h * 32) bytes: uncompressed patterns for every tile in the graphic?
+
+
+english stuff:
+  * convert to 8-bit encoding and remove dictionary lookup functionality
+    * dictionary lookup code can be replaced with something useful (VWF width
+      table or lookup code)
+  * the game seems almost totally set up to handle VWF already; the main thing
+    we need to do is set $32C9 to the pixel width of the character we're about
+    to print
+  * where to put new 12x12 font? will probably need ~0x40 characters,
+    0x18 bytes each, for ~0x600 bytes (plus width table)
+    * can we assume the lowest parts of "main memory" (C000-E000,
+      physical 108000) are free?
+    * perhaps put a copy of the font in every script?
+      we can replace the dictionary definition with an arbitrary struct
+      containing a pointer to the font, along with whatever else we need to add
+      * loaded scripts get 0x6E00 bytes of space (7200-E000)
+
+0x3068-0x3260 = unused?
+0x7109-0x71FE = unused, duplicate of earlier code?
+physical E5800-E6000 not used?
+physical EF800-F0000 not used?
+physical F9800-FA000 not used?
+         102BB0-102FA0?
+         10F000-110000?
+
+game build:
+  0x0-0x1000 = standard header
+    0x800 = header settings:
+      3b BE load start record num   0x000002  = 0x1000
+      1b load block size            0x0D      = 0x6800
+      2b loadaddr                   0x3000
+      2b runaddr                    0x3000
+      5b initial MPR2-MPR6          00 01 02 03 04 (+80)
+      (rest is zeroes)
+  0x1000-0x7800 = main code (only 0x1000-0x5800 is actually valid, but this
+                  is how much gets loaded at bootup)
+  0x29000-0x32000 = file table (see load code around 3F67)
+  0x51000-0x52000 = 6F487C.bin = ?
+  0x52000-0x54000 = code for "can't boot game" error (due to bad BIOS version,
+                    etc.) -- see 70E4
+                    file: 38534A.bin (but this is accessed via a hardcoded sector
+                          index and can't be moved unless it's updated)
+    
+    
+problems to deal with:
+  separated message/name attribution:
+    ami08, msg 82-83
+    ami14, msg 62-63
+    l_boss, msg 77-78
+  
+  nonexistent sound files:
+    mako05, msg 82:     j165
+    mako08:             se00
+
+done:
+  mako_bat: need to rewrite printNum to use new text encoding
+
+
+6101 = jump table for script ops 09-1F?
+
+standard message box text y-position ($32BA) has conflicting definitions in
+different script functions.
+check for calls of writeArrayWords to 0,$D (it's the $E-th word, so the
+definition will be the second entry)
+  - function 1 (initialization) sets it to $A5
+  - function 6 sets it to $A0 (specifically, the subtraction of 6 from $A6,
+    for some reason)
+
+
+
+0x48 tiles per
+tiles 0x480-0x7ff available
+
+0x100 = row 4
+0x40 bytes per row
+
+
+
+1F0409
+3F031A
+
+dc000
+
+
+
+why did punish subs fail graphics loading once???????
+
+0.89?
+1.78
+2.67

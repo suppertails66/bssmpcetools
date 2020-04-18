@@ -1,0 +1,163 @@
+10,"a000","〔アルテミス〕","今日はずいぶんと月がきれいだなあ……なあ、ルナ？","(Artemis)","The moon is particularly lovely tonight.
+Don't you think so, Luna?",,"The moon is particularly lovely today.
+Don't you think so, Luna?"
+11,"a001","〔アルテミス〕","……ルナ","(Artemis)","...Luna?",,"...Luna?"
+12,"a002","〔ルナ〕","すーーーーすーーーー","(Luna)","Zzz...Zzz...",,"Zzz... Zzz..."
+13,"a003","〔アルテミス〕","ふぅ……これもま
+平和な証拠か……","(Artemis)","*sigh*
+I suppose that's a sign we're in peaceful times, too...",,"*sigh* I suppose this is also proof of these peaceful times."
+14,"a007","〔アルテミス〕","こ……このエナジーは！？","(Artemis)","Wh-What is this energy?!",,"Wh-What is this energy?!"
+15,"a008","〔ルナ〕","ふにゃ？","(Luna)","*meow?*",,"*meowr?*"
+16,"a009","〔ルナ〕","ねえアルテミス、何？
+どうしたっていうのよぉ？","(Luna)","Artemis? What's the matter?",,"Artemis? What's the matter?"
+17,"a010","〔アルテミス〕","……こっちだ！
+おくれるな、ルナ！！","(Artemis)","...Over there!
+Keep up with me, Luna!",,"...Over there!
+Keep up with me, Luna!"
+18,"a011","〔ルナ〕","……もう！","(Luna)","...Sheesh...",,"...Sheesh..."
+19,"a012","〔ルナ〕","何よ、夢ランドじゃない
+","(Luna)","This is Dream Land.",,"This is Dream Land."
+20,,"〔ルナ〕","こんな時間に来たって
+しまってるわ","(Luna)","Why are you bringing me here this late―",,"Why are you bringing me here this late―"
+21,"a013","〔ルナ〕","！？","(Luna)","Huh?!",,"Huh?!"
+22,"a014","〔ルナ〕","……今の……","(Luna)","Was that...?",,"Was that...?"
+23,"v000","〔アルテミス〕","美奈子……美奈子……
+起きろよ、美奈子","(Artemis)","Minako...Minako...
+Wake up, Minako.",,"Minako... Minako...
+Wake up, Minako."
+24,,,"起きる",,"Wake up",,"Wake up"
+25,,,"起きない",,"Don't wake up",,"Don't wake up"
+26,,,"ねぼける",,"Wake up a little",,"Wake up a little"
+27,,"〔美奈子〕","……う、ううん……
+ああ、アラン……","(Minako)","Hmm...Oh, Alan...",,"Hmm... Oh, Alan..."
+28,,"〔アルテミス〕","なにねぼけてるんだ？
+起きろってば！","(Artemis)","What are you mumbling about?
+Wake up already!",,"What are you mumbling about?
+Wake up already!"
+29,,,"起きる",,"Wake up",,"Wake up"
+30,,,"起きない",,"Don't wake up",,"Don't wake up"
+31,,,"さらにねぼける",,"Stay half asleep",,"Stay half asleep"
+32,,"〔美奈子〕","んん……
+ああ、カタリナお姉さま…","(Minako)","Hmmm...Oh, Katarina+-oneesama++...",,"Hmmm... Oh, Katarina-oneesama..."
+33,,"〔アルテミス〕","なんの夢を見てるんだ　　　いいかげんに起きろ！！","(Artemis)","What is she even dreaming about...?
+WAKE UP ALREADY!",,"What is she even dreaming about...?
+WAKE UP ALREADY!"
+34,,"〔美奈子〕","すやすやすや……","(Minako)","Zzz...Zzz...",,"Zzz... Zzz..."
+35,,"〔美奈子〕","……だれもあたしの眠りをジャマすることはできない","(Minako)","...Nobody can interrupt my sleep...",,"...Nobody can interrupt my sleep..."
+36,,"〔アルテミス〕","…起きてるんじゃないか？美奈子、美奈子！！","(Artemis)","...That just means you're awake. Come on, Minako!",,"...That just means you're awake. Come on, Minako!"
+37,"v001","〔美奈子〕","ん……？んん……？？","(Minako)","Hmm...Hmm...?",,"Hmm.... Hmm...?"
+38,"v002","〔美奈子〕","ん……なによアルテミ……","(Minako)","What's up, Artemi―",,"What's up, Artemi―"
+39,"v003","〔美奈子〕","……はっ！","(Minako)","Ah!",,"Ah!"
+40,,"〔美奈子〕","！！　……？","(Minako)","!!...?",,"! ! ...?"
+41,"v004","〔美奈子〕","……ごじよんじゅうごふん","(Minako)","...It's 5:45.",,"...It's 5:45."
+42,"v005","〔美奈子〕","もう……おどかさないでよアルテミス","(Minako)","Don't SCARE me like that, Artemis.",,"Don't scare me like that, Artemis."
+43,"v006","〔美奈子〕","まだぜんぜん早いじゃない","(Minako)","It's still way early.",,"It's still way early."
+44,"v007","〔アルテミス〕","美奈子……聞いてほしい話があるんだ","(Artemis)","Minako, we need to talk.",,"Minako, we need to talk."
+45,,,"聞く",,"Listen",,"Listen"
+46,,,"聞かない",,"Don't listen",,"Don't listen"
+47,,,"ねなおす",,"Go back to sleep",,"Go back to sleep"
+48,,"〔美奈子〕","……………………","(Minako)","......",,"......"
+49,,"〔アルテミス〕","美奈子？","(Artemis)","Minako?",,"Minako?"
+50,,"〔美奈子〕","すやすやすや……","(Minako)","Zzz...Zzz...",,"Zzz... Zzz..."
+51,,"〔アルテミス〕","すわったままでねるな！","(Artemis)","Don't fall asleep sitting up!",,"Don't fall asleep while sitting!"
+52,,"〔美奈子〕","あとにしてくれない？
+あたしまだねむいんだけど","(Minako)","Can we do this later?
+I'd really like to catch a few more Zs.",,"Can we do this later?
+I'd really like to catch a few more Zs."
+53,,"〔アルテミス〕","だいじな話なんだ
+聞いてくれよ","(Artemis)","This is important.
+Listen to me.",,"This is important.
+Listen to me."
+54,,"〔美奈子〕","ん……？","(Minako)","Hm?",,"Hm?"
+55,,"〔アルテミス〕","じつは……","(Artemis)","You see...",,"You see..."
+56,,"〔アルテミス〕","……というわけだ","(Artemis)","...And that's about it.",,"...And that's about it."
+57,"v011","〔美奈子〕","……なによ、それ？","(Minako)","...What the heck is this?",,"...What the heck is this?"
+58,"v012","〔アルテミス〕","昨日の夜のことだ……
+すべて本当のことだ","(Artemis)","I told you. It's what we saw last night.",,"I told you. It's what we saw last night."
+59,"v013","〔美奈子〕","またあ、アルテミス。笑えないじょうだんはよしてよ","(Minako)","Oh, Artemis, you silly kitty.
+And here I thought you were being serious.",,"Oh Artemis, you silly kitty.
+And here I thought you were being serious."
+60,"v014","〔美奈子〕","今わたしねむいんだから
+おばけの話はまたこんどね","(Minako)","Well, I'm going back to sleep.
+Let's save the scary stories for another time, okay?",,"Well, I'm going back to sleep.
+Let's save the scary stories for another time, okay?"
+61,,"〔美奈子〕","おやすみー……","(Minako)","Goodnight...",,"Good night..."
+62,"v015","〔アルテミス〕","美奈子！","(Artemis)","Minako!",,"Minako!"
+63,"v016","〔美奈子〕","えーーーっ！特訓！？","(Minako)","Huh? Special training?!",,"Huh? Special training?!"
+64,"v017","〔アルテミス〕","そうだ","(Artemis)","That's right.",,"That's right."
+65,,"〔アルテミス〕","ルナとも相談したんだが、ぼくらが見たあのカゲは","(Artemis)","Luna and I both agree that the shadows we saw are not something we can simply ignore.",,"Luna and I both agree that the shadows we saw"
+66,,"〔アルテミス〕","どう考えてもただごとじゃない","(Artemis)",,,"are not something we can simply ignore."
+67,"v018","〔アルテミス〕","どうもイヤな予感がするんだ","(Artemis)","To be perfectly honest, I have a very bad feeling about this...",,"To be perfectly honest,"
+68,,"〔アルテミス〕","はっきり言ってしまえば…","(Artemis)",,,"I have a very bad feeling about this..."
+69,,,"おばけ",,"It's a ghost",,"It's a ghost"
+70,,,"新たなてき",,"It's a new enemy",,"It's a new enemy"
+71,,,"気のせい",,"It's your imagination",,"It's your imagination"
+72,"v019","〔美奈子〕","だからおばけでしょ？","(Minako)","It was probably a ghost.",,"It was probably a ghost."
+73,"v020","〔アルテミス〕","美奈子、マジメに聞いているのかい？","(Artemis)","Have you been listening, Minako?",,"Have you been listening, Minako?"
+74,"v021","〔美奈子〕","いくら特訓したって、おばけじゃ戦いようがないわよ","(Minako)","No amount of training can prepare us for a ghost!",,"No amount of training can prepare us for a ghost,"
+75,,"〔美奈子〕","アルテミス！","(Minako)","Artemis!",,"Artemis!"
+76,"v022","〔美奈子〕","悪いこと言わないから、ねましょ、ね？","(Minako)","Let's just sleep on it, alright?",,"Let's just sleep on it, alright?"
+77,"v023","〔アルテミス〕","美奈子……たのむからマジメに聞いてくれ……","(Artemis)","Minako, can you listen to me for once...?",,"Minako, can you listen to me for once...?"
+78,"v024","〔美奈子〕","アルテミス……","(Minako)","Artemis...",,"Artemis..."
+79,"v025","〔美奈子〕","あんた夜中じゅうとびまわっててつかれてんでしょ","(Minako)","You stayed up all night.
+You're probably just tired.",,"You stayed up all night.
+You're probably just tired."
+80,"v026","〔美奈子〕","ちょっとねたほうがいいわよ……","(Minako)","I think you should get some sleep.",,"I think you should get some sleep."
+81,"v027","〔美奈子〕","じゃね、おやすみ","(Minako)","Follow my lead. Nighty-night!",,"Follow my lead. Good night."
+82,"v028","〔アルテミス〕","美奈子！！","(Artemis)","Minako!",,"Minako!"
+83,"v029","〔美奈子〕","新たな……てき……？","(Minako)","A new enemy...?",,"A new enemy...?"
+84,"v030","〔アルテミス〕","そうだ……その可能性は否定できない。","(Artemis)","Yes...We can't ignore the possibility.",,"Yes... We can't ignore that possibility."
+85,"v031","〔アルテミス〕","万一のじたいにそなえて
+訓練が必要だと思うんだ","(Artemis)","That's why you need to train.
+I want you to be ready for anything.",,"That's why you need to train.
+I want you to be ready for anything."
+86,"v032","〔美奈子〕","そんな、アルテミスの考えすぎよ","(Minako)","You're just overthinking it, Artemis.",,"You're just overthinking it, Artemis."
+87,"v033","〔アルテミス〕","考えすぎであってほしいとは思う、だけど……","(Artemis)","I'd like to be wrong about this, I really would. However...",,"I'd like to be wrong about this, I really do. However..."
+88,,"〔美奈子〕","……………………","(Minako)","......",,"......"
+89,,"〔アルテミス〕","……………………","(Artemis)","......",,"......"
+90,"v034","〔美奈子〕","はあ……〔そなえあればうれしいな〕……か……","(Minako)","*sigh* {Better safe than worry}, I guess.",,"*sigh* ""Better safe than worry"", I guess."
+91,"v035","〔アルテミス〕","〔うれいなし〕だ……","(Artemis)","It's {better safe than sorry}.",,"It's ""Better safe than sorry""."
+92,"v036","〔アルテミス〕","とにかく、今日の放課後
+火川神社裏に集合だ","(Artemis)","At any rate, I want you all to gather behind Hikawa Shrine after school.",,"At any rate, I want you all to gather behind Hikawa Shrine after school."
+93,"v037","〔アルテミス〕","みんなにも伝えといてくれ","(Artemis)","Let the others know.",,"Let the others know."
+94,"v038","〔アルテミス〕","ぼくがそれまでルナといっしょに","(Artemis)","Meanwhile, Luna and I will search the area where we felt that ominous presence one more time.",,"Meanwhile, Luna and I will search one more time"
+95,,"〔アルテミス〕","もう一度怪しい気配を感じたあたりを調査してみるよ","(Artemis)",,,"the area where we felt that ominous presence."
+96,,"〔アルテミス〕","それと、このことは一応
+亜美にも伝えておいた","(Artemis)","By the way, we've already informed Ami of this matter.",,"By the way, we've already informed Ami of this matter."
+97,,"〔美奈子〕","亜美ちゃんも知ってるの？","(Minako)","You have?",,"You did?"
+98,,"〔アルテミス〕","ああ、彼女にも独自に調査をしてもらう","(Artemis)","Yes. She's performing her own investigation.",,"Yes. She's performing her own investigation."
+99,,"〔美奈子〕","はあ……亜美ちゃんも大変ねえ……","(Minako)","*sigh* Ami+-chan++'s got it rough, huh?",,"*sigh* Ami-chan has it rough, huh?"
+100,,"〔アルテミス〕","ひとごとみたいに言うんじゃないっ！","(Artemis)","Oh, she won't be the only one working hard.",,"Oh, she won't be the only one working hard."
+101,,"〔アルテミス〕","きみも特訓が終わったら
+夢ランドの調査をするんだ","(Artemis)","After your training, I'm sending you to investigate Dream Land.",,"After your training, I'm sending you to investigate Dream Land."
+102,,"〔美奈子〕","え？　な、なんで？","(Minako)","Huh? Why?",,"Huh? Why?"
+103,,"〔アルテミス〕","なにかコトが起こってからじゃ、おそいんだぞ","(Artemis)","We can't simply wait around until something happens.",,"We can't simply wait until something happens."
+104,,"〔アルテミス〕","念には念を入れておかないとな","(Artemis)","I like to be as sure as can be.",,"I like to be as sure as sure can be."
+105,,"〔美奈子〕","（……とんでもないことになっちゃった……）","(Minako)","(Ugh. This is terrible.)",,"(Ugh. This is terrible.)"
+106,"v039","〔美奈子〕","あーあ、まいったなあ……特訓か……","(Minako)","*sigh* Aww, man. Special training...",,"*sigh*  Aww man. Special training..."
+107,"v040","〔美奈子〕","アルテミスがああやって
+はりきってる時って","(Minako)","Once Artemis gets an idea in his head, he's relentless...",,"When Artemis gets an idea like that,"
+108,,"〔美奈子〕","キツいのよねえ……
+","(Minako)",,,"he's relentless..."
+109,"v041","〔美奈子〕","やだなあ、どうしよう？","(Minako)","This sucks...What am I going to do?",,"This sucks... What am I going to do?"
+110,,,"行かなきゃ",,"We have to.",,"We have to."
+111,,,"どうしよう？",,"I don't know...",,"I don't know..."
+112,,,"サボっちゃおう",,"How about skipping?",,"How about skipping?"
+113,"v042","〔美奈子〕","でも、アルテミス大マジメだったし……","(Minako)","Artemis was really serious about this...",,"Artemis was really serious about this..."
+114,,"〔美奈子〕","新しいてきが来てるかもしれないって","(Minako)","What if it really is a new enemy?",,"What if it really is a new enemy?"
+115,,"〔美奈子〕","アルテミスの言うことも　　もっともだし……","(Minako)","I know that he's right...",,"I know that he's right..."
+116,"v043","〔美奈子〕","……ここは愛と正義のセーラー戦士としてやはり……","(Minako)","...Thus, as a Sailor +Senshi+Soldier+ of love and justice, I should...",,"...Thus, as a Sailor Senshi of love and justice, I should..."
+117,"v044","〔美奈子〕","……さぼっちゃお！","(Minako)","...skip it!",,"...skip!"
+118,"v045","〔美奈子〕","あらっ？","(Minako)","Hm?",,"Hm?"
+119,"v046","〔子供Ａ〕","見たんだよ！
+ユーレイをよお！","(Child A)","I saw it, I'm telling you!
+It was a ghost!",,"I saw it, I'm telling you!
+It was a ghost!"
+120,"v047","〔子供Ｂ〕","ばか言うなよ！","(Child B)","Yeah, right!",,"Yeah, right!"
+121,"v048","〔子供Ｃ〕","うそつきい","(Child C)","You big liar!",,"You big liar!"
+122,"v049","〔子供Ａ〕","本当だってばさぁ！","(Child A)","But it's true!",,"But it's true!"
+123,"v050","〔子供Ａ〕","だからぁ、本当だよ
+夢ランドで見たんだからぁ","(Child A)","I'm serious, guys!
+I saw a ghost at Dream Land!",,"I'm serious, guys!
+I saw a ghost at Dream Land!"
+124,"v051","〔美奈子〕","夢ランドにユーレイねえ…","(Minako)","A ghost at Dream Land, huh...?",,"A ghost at Dream Land, huh...?"

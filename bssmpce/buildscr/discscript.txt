@@ -1,0 +1,569 @@
+
+# header
+force "out/base/bssm_header_0.bin" 0x0
+
+# boot sectors / main game engine
+force "out/base/bssm_boot_1000.bin" 0x1000
+
+# file index
+#force "out/base/bssm_fileindex_29000.bin" 0x29000
+
+# our very own font
+force "out/font/font.bin" 0x10000
+force "out/font/fontwidth.bin" 0x10780
+
+# unknown
+replace [6F487C] "out/base/bssm_unknown_51000.bin" 0xA2
+
+# bad system card version code
+#replace [38534A] "out/base/bssm_carderror_52000.bin" 0xA4
+replace [38534A] "out/base/bssm_carderror_52000.bin" 0x80
+
+# bitmaps
+setsrc "e485" "out/bitmaps/e485"
+
+.ifHonorifics
+.else
+  # umino stare
+  setsrc "e57" "out/bitmaps/e57"
+  
+  # naru checking watch at school gate
+  setsrc "e58" "out/bitmaps/e58"
+  setsrc "e59" "out/bitmaps/e59"
+  
+  # arcade sailor v posters
+  setsrc "e76" "out/bitmaps/e76"
+  setsrc "e76a" "out/bitmaps/e76a"
+  setsrc "e76b" "out/bitmaps/e76b"
+  setsrc "e76c" "out/bitmaps/e76c"
+  
+  # arcade claw machine
+  setsrc "e78" "out/bitmaps/e78"
+  setsrc "e78a" "out/bitmaps/e78a"
+  setsrc "e78b" "out/bitmaps/e78b"
+  setsrc "e78c" "out/bitmaps/e78c"
+  setsrc "e78d" "out/bitmaps/e78d"
+  
+  # usagi destiny
+  setsrc "e116b" "out/bitmaps/e116b"
+  
+  # usagi dynamic
+  setsrc "e169f" "out/bitmaps/e169f"
+  
+  # arisugawa park entrance, pillar cutscene
+  setsrc "e269" "out/bitmaps/e269"
+  
+  # usagi dream castle
+  setsrc "e310" "out/bitmaps/e310"
+  
+  # juban middle school, ending usagi/naru shot
+  setsrc "e518" "out/bitmaps/e518"
+  setsrc "e518a" "out/bitmaps/e518a"
+  
+  # juban middle school, ending naru closeup
+  setsrc "e519" "out/bitmaps/e519"
+  setsrc "e519a" "out/bitmaps/e519a"
+  setsrc "e521" "out/bitmaps/e521"
+  setsrc "e521a" "out/bitmaps/e521a"
+  setsrc "e522" "out/bitmaps/e522"
+  setsrc "e522a" "out/bitmaps/e522a"
+  setsrc "e522b" "out/bitmaps/e522b"
+  setsrc "e522c" "out/bitmaps/e522c"
+  
+  # garoben quiz
+  setsrc "e613" "out/bitmaps/e613"
+  setsrc "e613a" "out/bitmaps/e613a"
+  setsrc "e613b" "out/bitmaps/e613b"
+  setsrc "e613c" "out/bitmaps/e613c"
+  setsrc "e613d" "out/bitmaps/e613d"
+  setsrc "e613e" "out/bitmaps/e613e"
+  setsrc "e613f" "out/bitmaps/e613f"
+  setsrc "e613g" "out/bitmaps/e613g"
+  setsrc "e613h" "out/bitmaps/e613h"
+  setsrc "e613i" "out/bitmaps/e613i"
+  
+  # juban middle school front, zoisite fight
+  setsrc "e615a" "out/bitmaps/e615a"
+  setsrc "e615b" "out/bitmaps/e615b"
+  setsrc "e615c" "out/bitmaps/e615c"
+  setsrc "e615d" "out/bitmaps/e615d"
+  setsrc "e615e" "out/bitmaps/e615e"
+  
+  # ami: library closed
+  setsrc "e717" "out/bitmaps/e717"
+  setsrc "e717a" "out/bitmaps/e717a"
+  setsrc "e717b" "out/bitmaps/e717b"
+  setsrc "e717c" "out/bitmaps/e717c"
+  
+  # ami: bookstore closed
+  setsrc "e718" "out/bitmaps/e718"
+  setsrc "e718a" "out/bitmaps/e718a"
+  setsrc "e718b" "out/bitmaps/e718b"
+  setsrc "e718c" "out/bitmaps/e718c"
+  setsrc "e718d" "out/bitmaps/e718d"
+  setsrc "e718e" "out/bitmaps/e718e"
+  
+  # makoto love letter
+  setsrc "e835" "out/bitmaps/e835"
+  setsrc "e835a" "out/bitmaps/e835a"
+  setsrc "e835b" "out/bitmaps/e835b"
+  setsrc "e835c" "out/bitmaps/e835c"
+  setsrc "e835d" "out/bitmaps/e835d"
+  
+  # alien
+  setsrc "e836p" "out/bitmaps/e836p"
+  
+  # can throw bam
+  setsrc "e844b" "out/bitmaps/e844b"
+  
+  # kiyomi sign
+  setsrc "e855" "out/bitmaps/e855"
+  
+  # kiyomi letter
+  setsrc "e876" "out/bitmaps/e876"
+  
+  # minako park yakisoba
+  setsrc "e910" "out/bitmaps/e910"
+  setsrc "e910a" "out/bitmaps/e910a"
+  setsrc "e910b" "out/bitmaps/e910b"
+  setsrc "e910c" "out/bitmaps/e910c"
+  setsrc "e910d" "out/bitmaps/e910d"
+  setsrc "e910e" "out/bitmaps/e910e"
+  setsrc "e910f" "out/bitmaps/e910f"
+  setsrc "e910g" "out/bitmaps/e910g"
+  setsrc "e910h" "out/bitmaps/e910h"
+  setsrc "e910i" "out/bitmaps/e910i"
+  
+  # minako park ticket
+  setsrc "e953a" "out/bitmaps/e953a"
+  
+  # arcade background
+  setsrc "e1013" "out/bitmaps/e1013"
+  
+  # rei newspaper
+  setsrc "e1118" "out/bitmaps/e1118"
+  setsrc "e1118a" "out/bitmaps/e1118a"
+  setsrc "e1118b" "out/bitmaps/e1118b"
+  setsrc "e1118c" "out/bitmaps/e1118c"
+  setsrc "e1118d" "out/bitmaps/e1118d"
+  setsrc "e1118e" "out/bitmaps/e1118e"
+  setsrc "e1118f" "out/bitmaps/e1118f"
+.endif
+
+# new graphics
+insertbefore "e485" "out/grp/punish.bin" "e485sgrp"
+insertbefore "e485" "out/maps/punish.bin" "e485smap"
+
+#====================================================
+# intro subtitles
+#====================================================
+
+insertbefore "p265" "out/spritesubs/intro/intrs_0.bin" "intrs_0"
+
+#insertafter "title_b.HEB" "out/spritesubs/intro/opsubend.bin" "opsubend"
+#insertbefore "opsubend" "out/spritesubs/intro/opsub00a.bin" "opsub00a"
+#insertbefore "opsubend" "out/spritesubs/intro/opsub00b.bin" "opsub00b"
+
+insertbefore "p265" "out/spritesubs/op/opsub00.bin" "opsub00"
+
+insertbefore "title_b.HEB" "out/spritesubs/op/opsub_p0.bin" "opsub_p0"
+insertbefore "title_b.HEB" "out/spritesubs/op/opsub_p1.bin" "opsub_p1"
+insertbefore "title_b.HEB" "out/spritesubs/op/opsub_p2.bin" "opsub_p2"
+insertbefore "title_b.HEB" "out/spritesubs/op/opsub_p3.bin" "opsub_p3"
+
+#====================================================
+# title
+#====================================================
+
+# bitmaps
+#setsrc "title.heb" "out/bitmaps/title.heb"
+setsrc "title.heb" "out/bitmaps/title.bin"
+
+.ifHonorifics
+  setsrc "title_b.heb" "out/bitmaps/title_b_jp.bin"
+  insertafter "title.heb" "out/packs/title_flash_jp.bin" "titlflas.bin"
+.else
+  setsrc "title_b.heb" "out/bitmaps/title_b.bin"
+  insertafter "title.heb" "out/packs/title_flash.bin" "titlflas.bin"
+.endif
+
+setsrc "savefont.bin" "out/packs/savefont.bin"
+
+setsrc "sel0.heb" "out/bitmaps/sel0.bin"
+
+#====================================================
+# ending subtitles
+#====================================================
+
+#insertafter "e492c" "rsrc_raw/pal/ending_subs_sprite.pal" "subspal.bin"
+
+insertbefore "e492c" "out/spritesubs/ending/s0_0.bin" "s0_0"
+
+insertbefore "e493b" "out/spritesubs/ending/s1_0.bin" "s1_0"
+
+insertbefore "e494" "out/spritesubs/ending/s2_0.bin" "s2_0"
+
+insertbefore "e495a" "out/spritesubs/ending/s3_0.bin" "s3_0"
+
+insertbefore "e496b" "out/spritesubs/ending/s4_0.bin" "s4_0"
+
+insertbefore "e497" "out/spritesubs/ending/s5_0.bin" "s5_0"
+
+insertbefore "e501" "out/spritesubs/ending/s6_0.bin" "s6_0"
+
+insertbefore "e502" "out/spritesubs/ending/s7_0.bin" "s7_0"
+insertbefore "q065" "out/spritesubs/ending/s7_1.bin" "s7_1"
+insertbefore "q066" "out/spritesubs/ending/s7_2.bin" "s7_2"
+insertbefore "q067" "out/spritesubs/ending/s7_3.bin" "s7_3"
+
+insertbefore "e503" "out/spritesubs/ending/s8_0.bin" "s8_0"
+
+insertbefore "e504" "out/spritesubs/ending/s9_0_0.bin" "s9_0_0"
+insertbefore "q070" "out/spritesubs/ending/s9_0_1.bin" "s9_0_1"
+insertbefore "q071" "out/spritesubs/ending/s9_1.bin" "s9_1"
+
+insertbefore "e505" "out/spritesubs/ending/s10_0.bin" "s10_0"
+
+insertbefore "e506" "out/spritesubs/ending/s11_0_0.bin" "s11_0_0"
+insertbefore "e507" "out/spritesubs/ending/s11_0_1.bin" "s11_0_1"
+insertbefore "q075" "out/spritesubs/ending/s11_0_2.bin" "s11_0_2"
+insertbefore "q076" "out/spritesubs/ending/s11_0_3.bin" "s11_0_3"
+
+insertbefore "e508" "out/spritesubs/ending/s12_0_0.bin" "s12_0_0"
+insertbefore "q078" "out/spritesubs/ending/s12_0_1.bin" "s12_0_1"
+
+insertbefore "e509" "out/spritesubs/ending/s13_0.bin" "s13_0"
+
+insertbefore "e510a" "out/spritesubs/ending/s14_0_0.bin" "s14_0_0"
+insertbefore "q081" "out/spritesubs/ending/s14_0_1.bin" "s14_0_1"
+insertbefore "q082" "out/spritesubs/ending/s14_0_2.bin" "s14_0_2"
+
+insertbefore "e511b" "out/spritesubs/ending/s15_0.bin" "s15_0"
+
+insertbefore "e513" "out/spritesubs/ending/s16_0_0.bin" "s16_0_0"
+insertbefore "q085" "out/spritesubs/ending/s16_0_1.bin" "s16_0_1"
+insertbefore "q086" "out/spritesubs/ending/s16_1.bin" "s16_1"
+
+insertbefore "e514" "out/spritesubs/ending/s17_0.bin" "s17_0"
+insertbefore "q088" "out/spritesubs/ending/s17_1_0.bin" "s17_1_0"
+insertbefore "q089" "out/spritesubs/ending/s17_1_1.bin" "s17_1_1"
+
+# oops, this has the same name hash as s17_1_0, so we can't use it
+#insertbefore "e515" "out/spritesubs/ending/s18_0_0.bin" "s18_0_0"
+insertbefore "e515" "out/spritesubs/ending/s18_0_0.bin" "s18_0_x0"
+
+insertbefore "e517a" "out/spritesubs/ending/s19_0_0.bin" "s19_0_0"
+insertbefore "q092" "out/spritesubs/ending/s19_0_1.bin" "s19_0_1"
+insertbefore "q093" "out/spritesubs/ending/s19_0_2.bin" "s19_0_2"
+
+.ifHonorifics
+  insertbefore "e518" "out/spritesubs/ending/s20_0a.bin" "s20_0"
+.else
+  insertbefore "e518" "out/spritesubs/ending/s20_0b.bin" "s20_0"
+.endif
+
+insertbefore "e519" "out/spritesubs/ending/s21_0.bin" "s21_0"
+insertbefore "q096" "out/spritesubs/ending/s21_1_0.bin" "s21_1_0x"
+insertbefore "q097" "out/spritesubs/ending/s21_1_1.bin" "s21_1_1x"
+insertbefore "q098" "out/spritesubs/ending/s21_2.bin" "s21_2"
+.ifHonorifics
+  insertbefore "q099" "out/spritesubs/ending/s21_3a.bin" "s21_3"
+.else
+  insertbefore "q099" "out/spritesubs/ending/s21_3b.bin" "s21_3"
+.endif
+
+insertbefore "e521" "out/spritesubs/ending/s22_0.bin" "s22_0"
+insertbefore "q101" "out/spritesubs/ending/s22_1.bin" "s22_1"
+insertbefore "e522" "out/spritesubs/ending/s22_2.bin" "s22_2"
+.ifHonorifics
+  insertbefore "q103" "out/spritesubs/ending/s22_3a.bin" "s22_3"
+.else
+  insertbefore "q103" "out/spritesubs/ending/s22_3b.bin" "s22_3"
+.endif
+insertbefore "q104" "out/spritesubs/ending/s22_4.bin" "s22_4"
+.ifHonorifics
+  insertbefore "q105" "out/spritesubs/ending/s22_5a.bin" "s22_5"
+.else
+  insertbefore "q105" "out/spritesubs/ending/s22_5b.bin" "s22_5"
+.endif
+
+.ifHonorifics
+  insertbefore "e525" "out/spritesubs/ending/s23_0a.bin" "s23_0"
+.else
+  insertbefore "e525" "out/spritesubs/ending/s23_0b.bin" "s23_0"
+.endif
+insertbefore "e526" "out/spritesubs/ending/s23_1_0.bin" "s23_1_0x"
+insertbefore "q108" "out/spritesubs/ending/s23_1_1.bin" "s23_1_1x"
+
+insertbefore "e527" "out/spritesubs/ending/s24_0.bin" "s24_0"
+
+insertbefore "e528" "out/spritesubs/ending/s25_0.bin" "s25_0"
+
+.ifHonorifics
+  insertbefore "e529" "out/spritesubs/ending/s26_0a.bin" "s26_0"
+.else
+  insertbefore "e529" "out/spritesubs/ending/s26_0b.bin" "s26_0"
+.endif
+
+.ifHonorifics
+  insertbefore "e530" "out/spritesubs/ending/s27_0a.bin" "s27_0"
+.else
+  insertbefore "e530" "out/spritesubs/ending/s27_0b.bin" "s27_0"
+.endif
+
+insertbefore "e531" "out/spritesubs/ending/s28_0_0.bin" "s28_0_0x"
+.ifHonorifics
+  insertbefore "q114" "out/spritesubs/ending/s28_0_1a.bin" "s28_0_1x"
+.else
+  insertbefore "q114" "out/spritesubs/ending/s28_0_1b.bin" "s28_0_1x"
+.endif
+
+insertbefore "e532" "out/spritesubs/ending/s29_0_0.bin" "s29_0_0x"
+.ifHonorifics
+  insertbefore "e534" "out/spritesubs/ending/s29_0_1a.bin" "s29_0_1x"
+.else
+  insertbefore "e534" "out/spritesubs/ending/s29_0_1b.bin" "s29_0_1x"
+.endif
+
+insertbefore "e534" "out/spritesubs/ending/s30_0.bin" "s30_0"
+insertbefore "q118" "out/spritesubs/ending/s30_1.bin" "s30_1"
+insertbefore "q119" "out/spritesubs/ending/s30_2.bin" "s30_2"
+insertbefore "q120" "out/spritesubs/ending/s30_3.bin" "s30_3"
+insertbefore "q121" "out/spritesubs/ending/s30_4.bin" "s30_4"
+
+insertbefore "e535" "out/spritesubs/ending/s31_0.bin" "s31_0"
+insertbefore "q123" "out/spritesubs/ending/s31_1.bin" "s31_1"
+
+insertbefore "e536" "out/spritesubs/ending/s32_0_0.bin" "s32_0_0x"
+insertbefore "q125" "out/spritesubs/ending/s32_0_1.bin" "s32_0_1x"
+insertbefore "q126" "out/spritesubs/ending/s32_0_2.bin" "s32_0_2x"
+
+.ifHonorifics
+  insertbefore "e537" "out/spritesubs/ending/s33_0a.bin" "s33_0"
+.else
+  insertbefore "e537" "out/spritesubs/ending/s33_0b.bin" "s33_0"
+.endif
+insertbefore "e538" "out/spritesubs/ending/s33_1.bin" "s33_1"
+
+insertbefore "e539" "out/spritesubs/ending/s34_0.bin" "s34_0"
+
+insertbefore "e540" "out/spritesubs/ending/s35_0.bin" "s35_0"
+
+.ifHonorifics
+  insertbefore "e541" "out/spritesubs/ending/s36_0a.bin" "s36_0"
+.else
+  insertbefore "e541" "out/spritesubs/ending/s36_0b.bin" "s36_0"
+.endif
+
+insertbefore "e542" "out/spritesubs/ending/s37_0.bin" "s37_0"
+
+.ifHonorifics
+  insertbefore "e543a" "out/spritesubs/ending/s38_0a.bin" "s38_0"
+.else
+  insertbefore "e543a" "out/spritesubs/ending/s38_0b.bin" "s38_0"
+.endif
+
+.ifHonorifics
+  insertbefore "e542a" "out/spritesubs/ending/s39_0a.bin" "s39_0"
+.else
+  insertbefore "e542a" "out/spritesubs/ending/s39_0b.bin" "s39_0"
+.endif
+
+insertbefore "e543a" "out/spritesubs/ending/s40_0.bin" "s40_0"
+insertbefore "q136" "out/spritesubs/ending/s40_1.bin" "s40_1"
+.ifHonorifics
+  insertbefore "q137" "out/spritesubs/ending/s40_2a.bin" "s40_2"
+.else
+  insertbefore "q137" "out/spritesubs/ending/s40_2b.bin" "s40_2"
+.endif
+
+.ifHonorifics
+  insertbefore "e545" "out/spritesubs/ending/s41_0_0a.bin" "s41_0_0x"
+.else
+  insertbefore "e545" "out/spritesubs/ending/s41_0_0b.bin" "s41_0_0x"
+.endif
+insertbefore "q139" "out/spritesubs/ending/s41_0_1.bin" "s41_0_1x"
+
+.ifHonorifics
+  insertbefore "e546" "out/spritesubs/ending/s42_0a.bin" "s42_0"
+.else
+  insertbefore "e546" "out/spritesubs/ending/s42_0b.bin" "s42_0"
+.endif
+
+insertbefore "e547" "out/spritesubs/ending/s43_0.bin" "s43_0"
+
+insertbefore "q142" "out/spritesubs/ending/s44_0.bin" "s44_0"
+.ifHonorifics
+  insertbefore "q143" "out/spritesubs/ending/s45_0a.bin" "s45_0"
+.else
+  insertbefore "q143" "out/spritesubs/ending/s45_0b.bin" "s45_0"
+.endif
+
+insertbefore "e550" "out/spritesubs/ending/s46_0.bin" "s46_0"
+
+insertbefore "q145" "out/spritesubs/ending/s47_0.bin" "s47_0"
+
+insertbefore "q146" "out/spritesubs/ending/s48_0.bin" "s48_0"
+
+#====================================================
+# ed subtitles
+#====================================================
+
+insertbefore "end9.bin" "out/spritesubs/ed/edsub_p0.bin" "edsub_p0"
+insertbefore "end9.bin" "out/spritesubs/ed/edsub_p1.bin" "edsub_p1"
+insertbefore "end9.bin" "out/spritesubs/ed/edsub_p2.bin" "edsub_p2"
+
+#====================================================
+# ending scrolling scenes
+#====================================================
+
+insertbefore "e493b" "out/grp/ending_mercury_scroll.bin" "e_m_grp.bin"
+insertbefore "e493b" "out/ending_scroll_packs/mercury.bin" "e_m_map.bin"
+
+insertbefore "e495a" "out/grp/ending_jupiter_scroll.bin" "e_j_grp.bin"
+insertbefore "e495a" "out/ending_scroll_packs/jupiter.bin" "e_j_map.bin"
+
+insertbefore "e496b" "out/grp/ending_venus_scroll.bin" "e_v_grp.bin"
+insertbefore "e496b" "out/ending_scroll_packs/venus.bin" "e_v_map.bin"
+
+insertbefore "e548" "out/grp/ending_naru_scroll.bin" "e_n_grp.bin"
+insertbefore "e548" "out/ending_scroll_packs/naru.bin" "e_n_map.bin"
+
+#====================================================
+# ami chase
+#====================================================
+
+.ifHonorifics
+.else
+  setsrc "ami_4.bin" "out/grp/oikake_town_bg.bin"
+.endif
+
+#====================================================
+# new script files
+#====================================================
+
+insertafter "ami14a.mes" "out/scripts/ami14b.mes" "ami14b.mes"
+
+insertbefore "e134" "out/scripts/train.mes" "train.mes"
+insertbefore "e214" "out/scripts/lookout.mes" "lookout.mes"
+insertbefore "e227" "out/scripts/nephatck.mes" "nephatck.mes"
+insertbefore "e241" "out/scripts/nephcapt.mes" "nephcapt.mes"
+
+#insertafter "staff.mes" "out/scripts/staff2.mes" "staff2.mes"
+
+insertafter "f159" "out/scripts/unused.mes" "unused.mes"
+insertafter "unused.mes" "out/scripts/unused2.mes" "unused2.mes"
+insertafter "unused2.mes" "out/scripts/unused3.mes" "unused3.mes"
+#insertafter "unused.mes" "out/scripts/empty.mes" "empty.mes"
+
+#====================================================
+# script files
+#====================================================
+
+setsrc "ami01.mes" "out/scripts/ami01.mes"
+setsrc "ami02.mes" "out/scripts/ami02.mes"
+setsrc "ami03a.mes" "out/scripts/ami03a.mes"
+setsrc "ami03.mes" "out/scripts/ami03.mes"
+setsrc "ami04.mes" "out/scripts/ami04.mes"
+setsrc "ami05.mes" "out/scripts/ami05.mes"
+setsrc "ami06.mes" "out/scripts/ami06.mes"
+setsrc "ami07.mes" "out/scripts/ami07.mes"
+setsrc "ami08.mes" "out/scripts/ami08.mes"
+setsrc "ami09.mes" "out/scripts/ami09.mes"
+setsrc "ami10.mes" "out/scripts/ami10.mes"
+setsrc "ami11.mes" "out/scripts/ami11.mes"
+setsrc "ami12.mes" "out/scripts/ami12.mes"
+setsrc "ami13.mes" "out/scripts/ami13.mes"
+setsrc "ami14a.mes" "out/scripts/ami14a.mes"
+setsrc "ami14.mes" "out/scripts/ami14.mes"
+setsrc "ami15.mes" "out/scripts/ami15.mes"
+setsrc "ami16.mes" "out/scripts/ami16.mes"
+setsrc "amiend.mes" "out/scripts/amiend.mes"
+setsrc "cren.mes" "out/scripts/cren.mes"
+setsrc "ending.mes" "out/scripts/ending.mes"
+setsrc "intro.mes" "out/scripts/intro.mes"
+setsrc "l_boss.mes" "out/scripts/l_boss.mes"
+setsrc "mako01.mes" "out/scripts/mako01.mes"
+setsrc "mako02a.mes" "out/scripts/mako02a.mes"
+setsrc "mako02.mes" "out/scripts/mako02.mes"
+setsrc "mako03a.mes" "out/scripts/mako03a.mes"
+setsrc "mako03.mes" "out/scripts/mako03.mes"
+setsrc "mako04a.mes" "out/scripts/mako04a.mes"
+setsrc "mako04.mes" "out/scripts/mako04.mes"
+setsrc "mako05.mes" "out/scripts/mako05.mes"
+setsrc "mako06.mes" "out/scripts/mako06.mes"
+setsrc "mako07.mes" "out/scripts/mako07.mes"
+setsrc "mako08.mes" "out/scripts/mako08.mes"
+setsrc "mako09a.mes" "out/scripts/mako09a.mes"
+setsrc "mako09.mes" "out/scripts/mako09.mes"
+setsrc "mako10.mes" "out/scripts/mako10.mes"
+setsrc "mako11a.mes" "out/scripts/mako11a.mes"
+setsrc "mako11.mes" "out/scripts/mako11.mes"
+setsrc "mako12.mes" "out/scripts/mako12.mes"
+setsrc "mako_bat.mes" "out/scripts/mako_bat.mes"
+setsrc "makoend.mes" "out/scripts/makoend.mes"
+setsrc "mg011.mes" "out/scripts/mg011.mes"
+setsrc "mg012.mes" "out/scripts/mg012.mes"
+setsrc "mg021.mes" "out/scripts/mg021.mes"
+setsrc "min01.mes" "out/scripts/min01.mes"
+setsrc "min02.mes" "out/scripts/min02.mes"
+setsrc "min03a.mes" "out/scripts/min03a.mes"
+setsrc "min03.mes" "out/scripts/min03.mes"
+setsrc "min04a.mes" "out/scripts/min04a.mes"
+setsrc "min04.mes" "out/scripts/min04.mes"
+setsrc "min05.mes" "out/scripts/min05.mes"
+setsrc "min06.mes" "out/scripts/min06.mes"
+setsrc "min07.mes" "out/scripts/min07.mes"
+setsrc "min08.mes" "out/scripts/min08.mes"
+setsrc "min09a.mes" "out/scripts/min09a.mes"
+setsrc "min09.mes" "out/scripts/min09.mes"
+setsrc "min10.mes" "out/scripts/min10.mes"
+setsrc "min11a.mes" "out/scripts/min11a.mes"
+setsrc "min11.mes" "out/scripts/min11.mes"
+setsrc "minend1.mes" "out/scripts/minend1.mes"
+setsrc "minend2.mes" "out/scripts/minend2.mes"
+setsrc "oikake.mes" "out/scripts/oikake.mes"
+setsrc "rei01.mes" "out/scripts/rei01.mes"
+setsrc "rei02.mes" "out/scripts/rei02.mes"
+setsrc "rei03.mes" "out/scripts/rei03.mes"
+setsrc "rei04.mes" "out/scripts/rei04.mes"
+setsrc "rei05a.mes" "out/scripts/rei05a.mes"
+setsrc "rei05.mes" "out/scripts/rei05.mes"
+setsrc "rei06a.mes" "out/scripts/rei06a.mes"
+setsrc "rei06.mes" "out/scripts/rei06.mes"
+setsrc "rei07a.mes" "out/scripts/rei07a.mes"
+setsrc "rei07.mes" "out/scripts/rei07.mes"
+setsrc "rei08.mes" "out/scripts/rei08.mes"
+setsrc "rei09a.mes" "out/scripts/rei09a.mes"
+setsrc "rei09.mes" "out/scripts/rei09.mes"
+setsrc "reiend.mes" "out/scripts/reiend.mes"
+setsrc "reigame1.mes" "out/scripts/reigame1.mes"
+setsrc "reigame2.mes" "out/scripts/reigame2.mes"
+setsrc "reigame3.mes" "out/scripts/reigame3.mes"
+setsrc "staff.mes" "out/scripts/staff.mes"
+setsrc "start1.mes" "out/scripts/start1.mes"
+setsrc "start2.mes" "out/scripts/start2.mes"
+setsrc "start.mes" "out/scripts/start.mes"
+setsrc "usagi01.mes" "out/scripts/usagi01.mes"
+setsrc "usagi02.mes" "out/scripts/usagi02.mes"
+setsrc "usagi03.mes" "out/scripts/usagi03.mes"
+setsrc "usagi041.mes" "out/scripts/usagi041.mes"
+setsrc "usagi042.mes" "out/scripts/usagi042.mes"
+setsrc "usagi043.mes" "out/scripts/usagi043.mes"
+setsrc "usagi044.mes" "out/scripts/usagi044.mes"
+setsrc "usagi045.mes" "out/scripts/usagi045.mes"
+setsrc "usagi05a.mes" "out/scripts/usagi05a.mes"
+setsrc "usagi05.mes" "out/scripts/usagi05.mes"
+setsrc "usagi06a.mes" "out/scripts/usagi06a.mes"
+setsrc "usagi06.mes" "out/scripts/usagi06.mes"
+setsrc "usagi07a.mes" "out/scripts/usagi07a.mes"
+setsrc "usagi07.mes" "out/scripts/usagi07.mes"
+setsrc "usagi08a.mes" "out/scripts/usagi08a.mes"
+setsrc "usagi08b.mes" "out/scripts/usagi08b.mes"
+setsrc "usagi08.mes" "out/scripts/usagi08.mes"
+setsrc "usagi09.mes" "out/scripts/usagi09.mes"
+setsrc "usagi10.mes" "out/scripts/usagi10.mes"
+setsrc "usagi11.mes" "out/scripts/usagi11.mes"
+setsrc "usagi12.mes" "out/scripts/usagi12.mes"
+setsrc "usagi13.mes" "out/scripts/usagi13.mes"
+setsrc "vgame.mes" "out/scripts/vgame.mes"

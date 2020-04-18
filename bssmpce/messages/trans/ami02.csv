@@ -1,0 +1,127 @@
+10,,"〔亜美〕","さてと、今度はどの本を読もうかしら……","(Ami)","Now, what should I read next?",,"What should I read next?"
+11,,"〔亜美〕","ほとんどの本は
+読んでしまったけど","(Ami)","...Though really, I've read almost all of them already.",,"Then again, I've read most of them already."
+12,,,"雑学の本を読む",,"Read a trivia book",,"Read a trivia book"
+13,,,"宇宙の本を読む",,"Read an astronomy book",,"Read an astronomy book"
+14,,,"マンガを読む",,"Read manga",,"Read manga"
+15,,"〔亜美〕","そういえば、うさぎちゃんがおもしろいって言ってた","(Ami)","Come to think of it, Usagi+-chan++ mentioned a really funny manga.",,"Come to think of it, Usagi-chan mentioned a very"
+16,,"〔亜美〕","マンガ……あれを読んでみようかしら","(Ami)","Maybe I could read that...",,"funny manga. Maybe I could read that."
+17,,"〔亜美〕","学校の図書室にマンガはないのね……","(Ami)","...But the school library doesn't have manga.",,"...But the school library doesn't have manga."
+18,,,"雑学の本を読む",,"Read a trivia book",,"Read a trivia book"
+19,,,"宇宙の本を読む",,"Read an astronomy book",,"Read an astronomy book"
+20,,,"本を読むのやめる",,"That's enough reading",,"That's enough reading"
+21,,"〔亜美〕","（おもしろそうな本がないわね","(Ami)","(I can't find any interesting books.",,"(I can't find any interesting books."
+22,,"〔亜美〕","とりあえず机にもどって
+昨日アルテミスたちが","(Ami)","For now, I'll go back to my desk and think about what Artemis and Luna told me yesterday.)",,"for now I'll go back to my desk"
+23,,"〔亜美〕","言ってたことについて
+考えてみましょう）","(Ami)",,,"and think about what Artemis and Luna told me yesterday.)"
+24,,"〔亜美〕","宇宙クイズの本があるわ
+けっこうおもしろそうね","(Ami)","This is an astronomy quiz book.
+It looks interesting.",,"This is an astronomy quiz book.
+This looks interesting."
+25,,"〔亜美〕","Ｑ１
+月とは？","(Ami)","Q1
+What is the moon?",,"Q1
+What is the moon?"
+26,,,"恒星",,"A star",,"A star"
+27,,,"惑星",,"A planet",,"A planet"
+28,,,"衛星",,"A satellite",,"A satellite"
+29,"se09",,"ハズレー",,"Wrong!",,"Wrong!"
+30,,"〔亜美〕","まちがえちゃった！","(Ami)","I got it wrong?!",,"I got it wrong?!"
+31,,"〔亜美〕","月の問題を
+まちがえるなんて","(Ami)","A Sailor +Senshi+Soldier+ answering a question about the moon incorrectly...",,"A Sailor Senshi answering a question about the moon incorrectly..."
+32,,"〔亜美〕","セーラー戦士としてはずかしいわ","(Ami)","This is too embarrassing...",,"This is too embarrassing..."
+33,"se08",,"アタリー",,"Correct!",,"Correct!"
+34,,"〔亜美〕","簡単ね","(Ami)","That was easy.",,"That was easy."
+35,,"〔亜美〕","つぎの問題は……","(Ami)","The next question is...",,"The next question is..."
+36,,"〔亜美〕","Ｑ２
+木星と火星、大きいのは？","(Ami)","Q2
+Which is bigger, Jupiter or Mars?",,"Q2
+Which is bigger, Jupiter or Mars?"
+37,,,"木星",,"Jupiter",,"Jupiter"
+38,,,"火星",,"Mars",,"Mars"
+39,,,"同じ大きさ",,"They're the same size",,"They're the same size"
+40,"se09",,"ハズレー",,"Wrong!",,"Wrong!"
+41,,"〔亜美〕","まちがえちゃった！","(Ami)","I got it wrong?!",,"I got it wrong?!"
+42,,"〔亜美〕","ジュピターとマーズなら
+ジュピターの方が大きいに","(Ami)","But it's obvious that between Jupiter and Mars, Jupiter is the bigger one!",,"But it's obvious that between Jupiter and Mars,"
+43,,"〔亜美〕","きまってるのに～","(Ami)",,,"Jupiter is the bigger one!"
+44,"se08",,"アタリー",,"Correct!",,"Correct!"
+45,,"〔亜美〕","簡単ね。セーラー戦士でもジュピターとマーズでは","(Ami)","Of course.",,"Of course."
+46,,"〔亜美〕","ジュピターの方が
+大きいものね","(Ami)","Even in terms of the Sailor +Senshi+Soldiers+, Jupiter is bigger than Mars.",,"Even thinking about the Sailor Senshi, Jupiter is bigger than Mars."
+47,,"〔亜美〕","つぎの問題は……","(Ami)","The next question is...",,"The next question is..."
+48,,"〔亜美〕","Ｑ３
+マーキュリーとは何星？","(Ami)","Q3
+What element is Mercury associated with?",,"Q3
+What element is Mercury associated with?"
+49,,,"ハレーすい星",,"Wind",,"Wind"
+50,,,"火星",,"Fire",,"Fire"
+51,,,"水星",,"Water",,"Water"
+52,"se09",,"ハズレー",,"Wrong!",,"Wrong!"
+53,,"〔亜美〕","まちがえちゃった！","(Ami)","I got it wrong?!",,"I got it wrong?!"
+54,,"〔亜美〕","自分の守護星なのに！
+はずかしいわ～","(Ami)","It's literally my guardian planet! 
+Oooh, this is so embarrassing!",,"It's literally my guardian planet! 
+Oooh, this is so embarrassing!"
+55,"se08",,"アタリー",,"Correct!",,"Correct!"
+56,,"〔亜美〕","簡単ね。水星は、わたしの守護星ですもの","(Ami)","Well, of course. Mercury is my guardian planet.",,"Well, of course. Mercury is my guardian planet."
+57,,"〔亜美〕","雑学クイズの本があるわ
+けっこうおもしろそうね","(Ami)","It's a general trivia quiz book.
+This looks interesting.",,"It's a general trivia quiz book.
+This looks interesting."
+58,,"〔亜美〕","Ｑ１
+セーラー服はもと何の服？","(Ami)","Q1
+What is the inspiration for the sailor outfit?",,"Q1
+What is the inspiration for the sailor outfit?"
+59,,,"貴族",,"Aristocratic dress",,"Aristocracy dress"
+60,,,"僧侶",,"Priest clothing",,"Priest clothing"
+61,,,"水兵",,"Naval uniform",,"Naval uniform"
+62,"se09",,"ハズレー",,"Wrong!",,"Wrong!"
+63,,"〔亜美〕","まちがえちゃった！","(Ami)","I got it wrong?!",,"I got it wrong?!"
+64,,"〔亜美〕","セーラー服の問題を間違えるなんて","(Ami)","A Sailor +Senshi+Soldier+ answering a question about her outfit incorrectly...",,"A Sailor Senshi answering a question about her outfit incorrectly..."
+65,,"〔亜美〕","セーラー戦士として
+はずかしいわ","(Ami)","This is too embarrassing...",,"This is too embarrassing..."
+66,"se08",,"アタリー",,"Correct!",,"Correct!"
+67,,"〔亜美〕","簡単ね。セーラー戦士が","(Ami)","Of course.",,"Of course."
+68,,"〔亜美〕","セーラー服の問題を
+間違えるわけないわ","(Ami)","As a Sailor +Senshi+Soldier+, there's no way I'd get it wrong.",,"As a Sailor Senshi, there's no way I'd get it wrong."
+69,,"〔亜美〕","つぎの問題は……","(Ami)","The next question is...",,"The next question is..."
+70,,"〔亜美〕","Ｑ２
+セーラーＶの猫は？","(Ami)","Q2
+What kind of cat does Sailor V own?",,"Q2
+What cat does Sailor V own?"
+71,,,"黒猫",,"Black cat",,"Black cat"
+72,,,"白猫",,"White cat",,"White cat"
+73,,,"三毛猫",,"Calico cat",,"Calico cat"
+74,"se09",,"ハズレー",,"Wrong!",,"Wrong!"
+75,,"〔亜美〕","まちがえちゃった！","(Ami)","I got it wrong?!",,"I got it wrong?!"
+76,,"〔亜美〕","アルテミスにおこられちゃうわ","(Ami)","Artemis would be very mad about this...",,"Artemis would be very mad about this..."
+77,"se08",,"アタリー",,"Correct!",,"Correct!"
+78,,"〔亜美〕","簡単ね","(Ami)","That was easy.",,"That was easy."
+79,,"〔亜美〕","それにしてもセーラーＶが問題に","(Ami)","I'm surprised there's a question about Sailor V.",,"I'm surprised there's a question about Sailor V."
+80,,"〔亜美〕","なってるなんて
+ヴィーナスって有名ね","(Ami)","Venus is more famous than I thought.",,"Venus is more famous than I thought."
+81,,"〔亜美〕","つぎの問題は……","(Ami)","The next question is...",,"The next question is..."
+82,,"〔亜美〕","Ｑ３
+クリスタルとは何のこと？","(Ami)","Q3
+Which one is not a crystal?",,"Q3
+Which one is not a crystal?"
+83,,,"魔法",,"Ice",,"Ice"
+84,,,"宝物",,"Quartz",,"Quartz"
+85,,,"水晶",,"Glass",,"Glass"
+86,"se09",,"ハズレー",,"Wrong!",,"Wrong!"
+87,,"〔亜美〕","まちがえちゃった！","(Ami)","I got it wrong?!",,"I got it wrong?!"
+88,,"〔亜美〕","月のクリスタルパレスに住んでいたのに","(Ami)","We literally lived inside the Crystal Palace on the moon...","A note on series canon: the translation here is correct, but the original text is mistaken. The Crystal Palace is actually created in the future Crystal Tokyo and did not exist at this point in the timeline.","We literally lived inside the Crystal Palace on the moon..."
+89,,"〔亜美〕","はずかしいわ","(Ami)","This is so embarrassing.",,"This is so embarrassing."
+90,"se08",,"アタリー",,"Correct!",,"Correct!"
+91,,"〔亜美〕","簡単ね。月ではクリスタルパレスに住んでいた","(Ami)","That was easy.",,"That was easy."
+92,,"〔亜美〕","わたしが間違えたり
+しないわ","(Ami)","After all, we used to live inside the Crystal Palace on the moon.",,"After all, we used to live inside the Crystal Palace on the moon."
+93,,"〔亜美〕","１つも正解できないなんてもっと勉強しなきゃ","(Ami)","I didn't get a single one right...
+I need to study more.",,"I didn't get a single one right...
+I need to study more."
+94,,"〔亜美〕","簡単だったわね","(Ami)","That was too easy.",,"That was too easy."
+95,,"〔亜美〕","今度はもう少し難しい本に挑戦してみましょ","(Ami)","I'll try something harder next time.",,"I'll try something harder next time."
+96,,"〔亜美〕","ちょっと間違えちゃったわ","(Ami)","I didn't get them all right.",,"I didn't get them all right."
+97,,"〔亜美〕","もっとがんばって勉強しなきゃ","(Ami)","I need to study more.",,"I need to study more."

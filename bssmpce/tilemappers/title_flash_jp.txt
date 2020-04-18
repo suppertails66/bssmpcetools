@@ -1,0 +1,23 @@
+#******************************************************************************
+# Title screen flash tilemap generator script
+#******************************************************************************
+
+[Properties]
+palette=rsrc_raw/pal/intro_title_logo.pal
+freepalettes=0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+dest=out/grp/title_flash_jp.bin
+paldest=out/pal/title_flash_jp.pal
+loadAddr=0x100
+#minTiles=0x185
+maxTiles=0x600
+#blacklist=360-363
+
+#******************************************************************************
+# Main layout
+#******************************************************************************
+
+[Tilemap00]
+source=rsrc/title/title_flash_jp.png
+dest=out/maps/title_flash_jp.bin
+#transparency=0
+

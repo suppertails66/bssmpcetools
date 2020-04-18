@@ -1,0 +1,9434 @@
+{
+  setFunc         
+  (
+    [
+      pushImmed       $0
+      retVar          
+    ]
+    {
+      setFunc         
+      (
+        [
+          pushShort       $1E
+          retVar          
+        ]
+        {
+          op18            
+          (
+            [
+              pushInt         $E1
+              retVar          
+            ]
+          )
+          writeValueWord  $9
+          [
+            pushArrayWord   $0
+            pushShort       $17
+            readWordArray   
+            retVar          
+          ]
+          func_op18       
+          (
+            [
+              pushImmed       $8
+              retVar          
+            ]
+            [
+              pushInt         $A6
+              pushArrayWord   $9
+              pushShort       $10
+              mul             
+              add             
+              pushImmed       $1
+              sub             
+              retVar          
+            ]
+            [
+              pushShort       $1E
+              retVar          
+            ]
+            [
+              pushInt         $A6
+              pushArrayWord   $9
+              pushShort       $10
+              mul             
+              add             
+              pushImmed       $B
+              add             
+              pushImmed       $1
+              add             
+              retVar          
+            ]
+          )
+          op18            
+          (
+            [
+              pushShort       $1F
+              retVar          
+            ]
+          )
+          ret             
+        }
+      )
+      setFunc         
+      (
+        [
+          pushShort       $1F
+          retVar          
+        ]
+        {
+          ret             
+        }
+      )
+      setFunc         
+      (
+        [
+          pushShort       $20
+          retVar          
+        ]
+        {
+          callFunc        
+          (
+            [
+              pushShort       $1E
+              retVar          
+            ]
+          )
+          op17            
+          (
+          )
+          writeArrayWords $0
+            [
+              pushShort       $1B
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $0
+              retVar          
+            ]
+          )
+          writeValueWord  $A
+          [
+            pushArrayWord   $0
+            pushShort       $16
+            readWordArray   
+            retVar          
+          ]
+          writeValueWord  $13
+          [
+            pushArrayWord   $A
+            pushArrayWord   $0
+            pushShort       $17
+            readWordArray   
+            pushImmed       $2
+            mul             
+            pushImmed       $1
+            add             
+            readWordArray   
+            retVar          
+          ]
+          ret             
+        }
+      )
+      setFunc         
+      (
+        [
+          pushShort       $21
+          retVar          
+        ]
+        {
+          ret             
+        }
+      )
+      setFunc         
+      (
+        [
+          pushShort       $22
+          retVar          
+        ]
+        {
+          if              
+          [
+            pushArrayWord   $0
+            pushShort       $17
+            readWordArray   
+            pushImmed       $0
+            neg             
+            retVar          
+          ]
+          {
+            callFunc        
+            (
+              [
+                pushShort       $1E
+                retVar          
+              ]
+            )
+            writeArrayWords $0
+              [
+                pushShort       $17
+                retVar          
+              ]
+            (
+              [
+                pushArrayWord   $0
+                pushShort       $17
+                readWordArray   
+                pushImmed       $1
+                sub             
+                retVar          
+              ]
+            )
+            callFunc        
+            (
+              [
+                pushShort       $1E
+                retVar          
+              ]
+            )
+            ret             
+          }
+          ret             
+        }
+      )
+      setFunc         
+      (
+        [
+          pushShort       $23
+          retVar          
+        ]
+        {
+          if              
+          [
+            pushArrayWord   $0
+            pushShort       $17
+            readWordArray   
+            pushImmed       $9
+            neg             
+            retVar          
+          ]
+          {
+            writeValueWord  $A
+            [
+              pushArrayWord   $0
+              pushShort       $16
+              readWordArray   
+              retVar          
+            ]
+            if              
+            [
+              pushArrayWord   $A
+              pushArrayWord   $0
+              pushShort       $17
+              readWordArray   
+              pushImmed       $1
+              add             
+              pushImmed       $2
+              mul             
+              pushImmed       $1
+              add             
+              readWordArray   
+              pushImmed       $0
+              neg             
+              retVar          
+            ]
+            {
+              callFunc        
+              (
+                [
+                  pushShort       $1E
+                  retVar          
+                ]
+              )
+              writeArrayWords $0
+                [
+                  pushShort       $17
+                  retVar          
+                ]
+              (
+                [
+                  pushArrayWord   $0
+                  pushShort       $17
+                  readWordArray   
+                  pushImmed       $1
+                  add             
+                  retVar          
+                ]
+              )
+              callFunc        
+              (
+                [
+                  pushShort       $1E
+                  retVar          
+                ]
+              )
+              ret             
+            }
+            ret             
+          }
+          ret             
+        }
+      )
+      setFunc         
+      (
+        [
+          pushShort       $24
+          retVar          
+        ]
+        {
+          ret             
+        }
+      )
+      setFunc         
+      (
+        [
+          pushShort       $25
+          retVar          
+        ]
+        {
+          ret             
+        }
+      )
+      setFunc         
+      (
+        [
+          pushShort       $26
+          retVar          
+        ]
+        {
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $0
+              retVar          
+            ]
+          )
+          callFunc        
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          op17            
+          (
+          )
+          writeArrayWords $0
+            [
+              pushShort       $19
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $3
+              retVar          
+            ]
+          )
+          writeArrayWords $0
+            [
+              pushShort       $18
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $0
+              retVar          
+            ]
+          )
+          writeArrayWords $0
+            [
+              pushShort       $17
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $0
+              retVar          
+            ]
+          )
+          func_op14       
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          func_op14       
+          (
+            [
+              pushImmed       $0
+              retVar          
+            ]
+          )
+          op18            
+          (
+            [
+              pushShort       $1F
+              retVar          
+            ]
+          )
+          writeValueWord  $A
+          [
+            pushArrayWord   $0
+            pushShort       $16
+            readWordArray   
+            retVar          
+          ]
+          writeValueWord  $9
+          [
+            pushImmed       $0
+            retVar          
+          ]
+          ifThenWhile     $F
+            [
+              pushArrayWord   $9
+              pushArrayWord   $0
+              pushShort       $1A
+              readWordArray   
+              neg             
+              retVar          
+            ]
+            {
+              writeArrayWords $0
+                [
+                  pushShort       $11
+                  retVar          
+                ]
+              (
+                [
+                  pushImmed       $8
+                  pushImmed       $8
+                  mul             
+                  retVar          
+                ]
+                [
+                  pushInt         $A6
+                  pushArrayWord   $9
+                  pushShort       $10
+                  mul             
+                  add             
+                  retVar          
+                ]
+              )
+              op14            
+              (
+                [
+                  pushArrayWord   $A
+                  pushArrayWord   $9
+                  pushImmed       $2
+                  mul             
+                  readWordArray   
+                  retVar          
+                ]
+              )
+              writeValueWord  $9
+              [
+                pushArrayWord   $9
+                pushImmed       $1
+                add             
+                retVar          
+              ]
+              ret             
+            }
+          op18            
+          (
+            [
+              pushInt         $F1
+              retVar          
+            ]
+          )
+          writeArrayWords $0
+            [
+              pushShort       $17
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $0
+              retVar          
+            ]
+          )
+          callFunc        
+          (
+            [
+              pushShort       $1E
+              retVar          
+            ]
+          )
+          ret             
+        }
+      )
+      setFunc         
+      (
+        [
+          pushShort       $27
+          retVar          
+        ]
+        {
+          ret             
+        }
+      )
+      setFunc         
+      (
+        [
+          pushShort       $29
+          retVar          
+        ]
+        {
+          ret             
+        }
+      )
+      ret             
+    }
+  )
+  setFunc         
+  (
+    [
+      pushImmed       $1
+      retVar          
+    ]
+    {
+      func_op16       
+      (
+        [
+          pushImmed       $2
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushImmed       $D
+          retVar          
+        ]
+      (
+        [
+          pushImmed       $8
+          retVar          
+        ]
+        [
+          pushInt         $A5
+          retVar          
+        ]
+        [
+          pushShort       $1E
+          retVar          
+        ]
+        [
+          pushInt         $D5
+          retVar          
+        ]
+      )
+      op18            
+      (
+        [
+          pushShort       $1F
+          retVar          
+        ]
+      )
+      op17            
+      (
+      )
+      ret             
+    }
+  )
+  setFunc         
+  (
+    [
+      pushShort       $11
+      retVar          
+    ]
+    {
+      writeArrayWords $0
+        [
+          pushShort       $21
+          retVar          
+        ]
+      (
+        [
+          pushInt         $FF
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushShort       $23
+          retVar          
+        ]
+      (
+        [
+          pushImmed       $0
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $4
+          retVar          
+        ]
+        [
+          pushLong        $4000
+          pushImmed       $4
+          add             
+          pushInt         $200
+          add             
+          pushShort       $16
+          pushShort       $12
+          mul             
+          add             
+          retVar          
+        ]
+        [
+          pushLong        $3180
+          retVar          
+        ]
+        [
+          pushLong        $9D00
+          pushLong        $3180
+          litNybArrayRead immed $0
+          mul             
+          add             
+          pushImmed       $2
+          div             
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $E
+          retVar          
+        ]
+        [
+          pushLong        $4000
+          pushImmed       $4
+          add             
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $D
+          retVar          
+        ]
+        [
+          pushImmed       $5
+          retVar          
+        ]
+        [
+          pushImmed       $1
+          retVar          
+        ]
+        [
+          pushShort       $16
+          retVar          
+        ]
+        [
+          pushShort       $12
+          retVar          
+        ]
+        [
+          pushLong        $4000
+          pushImmed       $4
+          add             
+          pushInt         $200
+          add             
+          retVar          
+        ]
+        [
+          pushInt         $4E8
+          pushInt         $18C
+          litNybArrayRead immed $0
+          mul             
+          add             
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushImmed       $7
+          retVar          
+        ]
+      (
+        [
+          pushImmed       $0
+          retVar          
+        ]
+      )
+      writeNybsLit    immed $0
+      (
+        [
+          litNybArrayRead immed $0
+          pushImmed       $1
+          add             
+          pushImmed       $1
+          and             
+          retVar          
+        ]
+      )
+      ret             
+    }
+  )
+  setFunc         
+  (
+    [
+      pushShort       $12
+      retVar          
+    ]
+    {
+      writeArrayWords $0
+        [
+          pushShort       $21
+          retVar          
+        ]
+      (
+        [
+          pushInt         $FF
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushShort       $23
+          retVar          
+        ]
+      (
+        [
+          pushImmed       $0
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $4
+          retVar          
+        ]
+        [
+          pushLong        $8000
+          pushImmed       $4
+          add             
+          pushInt         $200
+          add             
+          pushShort       $16
+          pushShort       $12
+          mul             
+          add             
+          retVar          
+        ]
+        [
+          pushLong        $3180
+          retVar          
+        ]
+        [
+          pushLong        $9D00
+          pushLong        $3180
+          litNybArrayRead immed $0
+          mul             
+          add             
+          pushImmed       $2
+          div             
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $E
+          retVar          
+        ]
+        [
+          pushLong        $8000
+          pushImmed       $4
+          add             
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $D
+          retVar          
+        ]
+        [
+          pushImmed       $5
+          retVar          
+        ]
+        [
+          pushImmed       $1
+          retVar          
+        ]
+        [
+          pushShort       $16
+          retVar          
+        ]
+        [
+          pushShort       $12
+          retVar          
+        ]
+        [
+          pushLong        $8000
+          pushImmed       $4
+          add             
+          pushInt         $200
+          add             
+          retVar          
+        ]
+        [
+          pushInt         $4E8
+          pushInt         $18C
+          litNybArrayRead immed $0
+          mul             
+          add             
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushImmed       $7
+          retVar          
+        ]
+      (
+        [
+          pushImmed       $0
+          retVar          
+        ]
+      )
+      writeNybsLit    immed $0
+      (
+        [
+          litNybArrayRead immed $0
+          pushImmed       $1
+          add             
+          pushImmed       $1
+          and             
+          retVar          
+        ]
+      )
+      ret             
+    }
+  )
+  setFunc         
+  (
+    [
+      pushImmed       $2
+      retVar          
+    ]
+    {
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $0
+        lt              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushShort       $11
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $1
+        lt              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushShort       $12
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $2
+        lt              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $2
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushShort       $11
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $3
+        lt              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $2
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushShort       $12
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $4
+        lt              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushShort       $11
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $5
+        lt              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushShort       $12
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $6
+        lt              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $4
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushShort       $11
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $7
+        lt              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $4
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushShort       $12
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $8
+        lt              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushShort       $11
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $9
+        lt              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushShort       $12
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        ret             
+      }
+      ret             
+    }
+  )
+  setFunc         
+  (
+    [
+      pushShort       $13
+      retVar          
+    ]
+    {
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $0
+        eq              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushShort       $11
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $1
+        eq              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushShort       $12
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $2
+        eq              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $2
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushShort       $11
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $3
+        eq              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $2
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushShort       $12
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $4
+        eq              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushShort       $11
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $5
+        eq              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushShort       $12
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $6
+        eq              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $4
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushShort       $11
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $7
+        eq              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $4
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushShort       $12
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $8
+        eq              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushShort       $11
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $9
+        eq              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushShort       $12
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        ret             
+      }
+      ret             
+    }
+  )
+  setFunc         
+  (
+    [
+      pushImmed       $3
+      retVar          
+    ]
+    {
+      writeValueWord  $1A
+      [
+        pushImmed       $0
+        retVar          
+      ]
+      func_op26       
+      (
+        {
+          if              
+          [
+            pushArrayWord   $1A
+            pushImmed       $0
+            eq              
+            retVar          
+          ]
+          {
+            writeArrayWords $0
+              [
+                pushImmed       $7
+                retVar          
+              ]
+            (
+              [
+                pushImmed       $1
+                retVar          
+              ]
+            )
+            callFunc        
+            (
+              [
+                pushShort       $11
+                retVar          
+              ]
+            )
+            writeArrayWords $0
+              [
+                pushImmed       $7
+                retVar          
+              ]
+            (
+              [
+                pushImmed       $0
+                retVar          
+              ]
+            )
+            ret             
+          }
+          if              
+          [
+            pushArrayWord   $1A
+            pushImmed       $A
+            eq              
+            retVar          
+          ]
+          {
+            writeArrayWords $0
+              [
+                pushImmed       $7
+                retVar          
+              ]
+            (
+              [
+                pushImmed       $1
+                retVar          
+              ]
+            )
+            callFunc        
+            (
+              [
+                pushShort       $12
+                retVar          
+              ]
+            )
+            writeArrayWords $0
+              [
+                pushImmed       $7
+                retVar          
+              ]
+            (
+              [
+                pushImmed       $0
+                retVar          
+              ]
+            )
+            ret             
+          }
+          writeValueWord  $1A
+          [
+            pushArrayWord   $1A
+            pushImmed       $1
+            add             
+            retVar          
+          ]
+          if              
+          [
+            pushArrayWord   $1A
+            pushShort       $14
+            lt              
+            retVar          
+          ]
+          {
+            writeValueWord  $1A
+            [
+              pushImmed       $0
+              retVar          
+            ]
+            ret             
+          }
+          ret             
+        }
+      )
+      ret             
+    }
+  )
+  setFunc         
+  (
+    [
+      pushImmed       $4
+      retVar          
+    ]
+    {
+      writeValueWord  $11
+      [
+        pushArrayWord   $0
+        pushImmed       $C
+        readWordArray   
+        retVar          
+      ]
+      writeArrayWords $0
+        [
+          pushImmed       $9
+          retVar          
+        ]
+      (
+        [
+          pushArrayWord   $0
+          pushImmed       $9
+          readWordArray   
+          pushLong        $8000
+          or              
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushImmed       $C
+          retVar          
+        ]
+      (
+        [
+          pushArrayWord   $0
+          pushImmed       $C
+          readWordArray   
+          pushImmed       $2
+          or              
+          retVar          
+        ]
+      )
+      callFunc        
+      (
+        [
+          pushImmed       $B
+          retVar          
+        ]
+      )
+      op16            
+      (
+      )
+      op17            
+      (
+      )
+      writeArrayWords $0
+        [
+          pushImmed       $9
+          retVar          
+        ]
+      (
+        [
+          pushArrayWord   $0
+          pushImmed       $9
+          readWordArray   
+          pushLong        $7FFF
+          and             
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushImmed       $C
+          retVar          
+        ]
+      (
+        [
+          pushArrayWord   $0
+          pushImmed       $C
+          readWordArray   
+          pushLong        $FFFD
+          and             
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushImmed       $C
+          retVar          
+        ]
+      (
+        [
+          pushArrayWord   $11
+          retVar          
+        ]
+      )
+      ret             
+    }
+  )
+  setFunc         
+  (
+    [
+      pushImmed       $5
+      retVar          
+    ]
+    {
+      func_op24       
+      (
+        [
+          pushImmed       $2
+          retVar          
+        ]
+      )
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $0
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M001"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $1
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M002"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $2
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M003"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $3
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M004"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $4
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M005"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $5
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M006"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $6
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M008"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $7
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M009"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $8
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M010"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $9
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M011"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $A
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M012"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $B
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M013"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $C
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M014"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $D
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M015"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $E
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M016"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushShort       $10
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M017"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushShort       $11
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M018"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushShort       $12
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M019"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushShort       $13
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M020"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushShort       $14
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M021"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushShort       $15
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M022"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushShort       $16
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M023"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushShort       $17
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M024"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushShort       $18
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M025"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushShort       $19
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M026"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushShort       $1A
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M027"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushShort       $1B
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M028"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushShort       $1C
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M029"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushShort       $1D
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M030"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushShort       $1E
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M031"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushShort       $1F
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M032"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushShort       $20
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M033"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushShort       $21
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M034"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushShort       $22
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M035"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushShort       $23
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M036"
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushShort       $24
+        eq              
+        retVar          
+      ]
+      {
+        playMusic       
+        (
+          "M037"
+        )
+        ret             
+      }
+      func_op24       
+      (
+        [
+          pushImmed       $0
+          retVar          
+        ]
+      )
+      ret             
+    }
+  )
+  setFunc         
+  (
+    [
+      pushImmed       $6
+      retVar          
+    ]
+    {
+      writeArrayWords $0
+        [
+          pushImmed       $D
+          retVar          
+        ]
+      (
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushShort       $1F
+          retVar          
+        ]
+        [
+          pushInt         $DF
+          retVar          
+        ]
+      )
+      op18            
+      (
+        [
+          pushImmed       $7
+          retVar          
+        ]
+      )
+      op17            
+      (
+      )
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $0
+        eq              
+        retVar          
+      ]
+      {
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $0
+          eq              
+          retVar          
+        ]
+        {
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "wakua.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $1
+          eq              
+          retVar          
+        ]
+        {
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "waku7.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $2
+          eq              
+          retVar          
+        ]
+        {
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "waku1.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $3
+          eq              
+          retVar          
+        ]
+        {
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "waku4.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $4
+          eq              
+          retVar          
+        ]
+        {
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "wakud.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          ret             
+        }
+        ret             
+      }
+      else            
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $1
+        eq              
+        retVar          
+      ]
+      {
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $0
+          eq              
+          retVar          
+        ]
+        {
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "wakub.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $1
+          eq              
+          retVar          
+        ]
+        {
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "waku8.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $2
+          eq              
+          retVar          
+        ]
+        {
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "waku2.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $3
+          eq              
+          retVar          
+        ]
+        {
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "waku5.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $4
+          eq              
+          retVar          
+        ]
+        {
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "wakue.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          ret             
+        }
+        ret             
+      }
+      else            
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $2
+        eq              
+        retVar          
+      ]
+      {
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $0
+          eq              
+          retVar          
+        ]
+        {
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "wakuc.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $1
+          eq              
+          retVar          
+        ]
+        {
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "waku9.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $2
+          eq              
+          retVar          
+        ]
+        {
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "waku3.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $3
+          eq              
+          retVar          
+        ]
+        {
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "waku6.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $4
+          eq              
+          retVar          
+        ]
+        {
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "wakuf.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          ret             
+        }
+        ret             
+      }
+      writeArrayWords $0
+        [
+          pushShort       $21
+          retVar          
+        ]
+      (
+        [
+          pushImmed       $7
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushShort       $23
+          retVar          
+        ]
+      (
+        [
+          pushImmed       $9
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $4
+          retVar          
+        ]
+        [
+          pushLong        $4000
+          pushImmed       $4
+          add             
+          pushInt         $200
+          add             
+          pushShort       $20
+          pushShort       $1C
+          mul             
+          add             
+          retVar          
+        ]
+        [
+          pushLong        $7000
+          retVar          
+        ]
+        [
+          pushLong        $2200
+          pushImmed       $2
+          div             
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $E
+          retVar          
+        ]
+        [
+          pushLong        $4000
+          pushImmed       $4
+          add             
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $C
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushShort       $20
+          retVar          
+        ]
+        [
+          pushShort       $1C
+          retVar          
+        ]
+        [
+          pushLong        $4000
+          pushImmed       $4
+          add             
+          pushInt         $200
+          add             
+          retVar          
+        ]
+        [
+          pushInt         $110
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushImmed       $7
+          retVar          
+        ]
+      (
+        [
+          pushImmed       $0
+          retVar          
+        ]
+      )
+      writeValueWord  $14
+      [
+        pushArrayWord   $0
+        pushShort       $22
+        readWordArray   
+        pushShort       $10
+        pushImmed       $E
+        mul             
+        pushImmed       $2
+        mul             
+        add             
+        retVar          
+      ]
+      writeArrayWords $14
+        [
+          pushImmed       $0
+          retVar          
+        ]
+      (
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushInt         $FFF
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushImmed       $D
+          retVar          
+        ]
+      (
+        [
+          pushImmed       $8
+          retVar          
+        ]
+        [
+          pushInt         $A6
+          pushImmed       $6
+          sub             
+          retVar          
+        ]
+        [
+          pushShort       $1E
+          retVar          
+        ]
+        [
+          pushInt         $D5
+          pushImmed       $2
+          add             
+          retVar          
+        ]
+      )
+      op18            
+      (
+        [
+          pushShort       $1F
+          retVar          
+        ]
+      )
+      op17            
+      (
+      )
+      ret             
+    }
+  )
+  setFunc         
+  (
+    [
+      pushImmed       $7
+      retVar          
+    ]
+    {
+      writeNybsLit    immed $0
+      (
+        [
+          litNybArrayRead immed $0
+          pushImmed       $1
+          and             
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushShort       $21
+          retVar          
+        ]
+      (
+        [
+          pushInt         $FF
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushShort       $23
+          retVar          
+        ]
+      (
+        [
+          pushImmed       $0
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $4
+          retVar          
+        ]
+        [
+          pushLong        $4000
+          pushImmed       $4
+          add             
+          pushInt         $200
+          add             
+          pushShort       $16
+          pushShort       $12
+          mul             
+          add             
+          retVar          
+        ]
+        [
+          pushLong        $3180
+          retVar          
+        ]
+        [
+          pushLong        $9D00
+          pushLong        $3180
+          litNybArrayRead immed $0
+          mul             
+          add             
+          pushImmed       $2
+          div             
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $E
+          retVar          
+        ]
+        [
+          pushLong        $4000
+          pushImmed       $4
+          add             
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $D
+          retVar          
+        ]
+        [
+          pushImmed       $5
+          retVar          
+        ]
+        [
+          pushImmed       $1
+          retVar          
+        ]
+        [
+          pushShort       $16
+          retVar          
+        ]
+        [
+          pushShort       $12
+          retVar          
+        ]
+        [
+          pushLong        $4000
+          pushImmed       $4
+          add             
+          pushInt         $200
+          add             
+          retVar          
+        ]
+        [
+          pushInt         $4E8
+          pushInt         $18C
+          litNybArrayRead immed $0
+          mul             
+          add             
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushImmed       $7
+          retVar          
+        ]
+      (
+        [
+          pushImmed       $0
+          retVar          
+        ]
+      )
+      writeNybsLit    immed $0
+      (
+        [
+          litNybArrayRead immed $0
+          pushImmed       $1
+          add             
+          pushImmed       $1
+          and             
+          retVar          
+        ]
+      )
+      ret             
+    }
+  )
+  setFunc         
+  (
+    [
+      pushImmed       $8
+      retVar          
+    ]
+    {
+      writeNybsLit    immed $0
+      (
+        [
+          litNybArrayRead immed $0
+          pushImmed       $1
+          and             
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushShort       $21
+          retVar          
+        ]
+      (
+        [
+          pushLong        $FFFF
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushShort       $23
+          retVar          
+        ]
+      (
+        [
+          pushImmed       $0
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $4
+          retVar          
+        ]
+        [
+          pushLong        $4000
+          pushImmed       $4
+          add             
+          pushInt         $200
+          add             
+          pushShort       $20
+          pushShort       $1C
+          mul             
+          add             
+          retVar          
+        ]
+        [
+          pushLong        $7000
+          retVar          
+        ]
+        [
+          pushLong        $2000
+          pushLong        $7000
+          litNybArrayRead immed $0
+          mul             
+          add             
+          pushImmed       $2
+          div             
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $E
+          retVar          
+        ]
+        [
+          pushLong        $4000
+          pushImmed       $4
+          add             
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $C
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushShort       $20
+          retVar          
+        ]
+        [
+          pushShort       $1C
+          retVar          
+        ]
+        [
+          pushLong        $4000
+          pushImmed       $4
+          add             
+          pushInt         $200
+          add             
+          retVar          
+        ]
+        [
+          pushInt         $100
+          pushInt         $380
+          litNybArrayRead immed $0
+          mul             
+          add             
+          retVar          
+        ]
+      )
+      writeNybsLit    immed $0
+      (
+        [
+          litNybArrayRead immed $0
+          pushImmed       $1
+          add             
+          pushImmed       $1
+          and             
+          retVar          
+        ]
+      )
+      ret             
+    }
+  )
+  setFunc         
+  (
+    [
+      pushImmed       $9
+      retVar          
+    ]
+    {
+      writeNybsLit    immed $0
+      (
+        [
+          litNybArrayRead immed $0
+          pushImmed       $1
+          and             
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushShort       $21
+          retVar          
+        ]
+      (
+        [
+          pushLong        $FFFF
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushShort       $23
+          retVar          
+        ]
+      (
+        [
+          pushImmed       $0
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $4
+          retVar          
+        ]
+        [
+          pushLong        $4000
+          pushImmed       $4
+          add             
+          pushInt         $200
+          add             
+          pushShort       $20
+          pushShort       $1C
+          mul             
+          add             
+          retVar          
+        ]
+        [
+          pushLong        $7000
+          retVar          
+        ]
+        [
+          pushLong        $2000
+          pushLong        $7000
+          litNybArrayRead immed $0
+          mul             
+          add             
+          pushImmed       $2
+          div             
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $E
+          retVar          
+        ]
+        [
+          pushLong        $4000
+          pushImmed       $4
+          add             
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $D
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushShort       $20
+          retVar          
+        ]
+        [
+          pushShort       $1C
+          retVar          
+        ]
+        [
+          pushLong        $4000
+          pushImmed       $4
+          add             
+          pushInt         $200
+          add             
+          retVar          
+        ]
+        [
+          pushInt         $100
+          pushInt         $380
+          litNybArrayRead immed $0
+          mul             
+          add             
+          retVar          
+        ]
+      )
+      writeNybsLit    immed $0
+      (
+        [
+          litNybArrayRead immed $0
+          pushImmed       $1
+          add             
+          pushImmed       $1
+          and             
+          retVar          
+        ]
+      )
+      ret             
+    }
+  )
+  setFunc         
+  (
+    [
+      pushImmed       $A
+      retVar          
+    ]
+    {
+      setFunc         
+      (
+        [
+          pushShort       $1E
+          retVar          
+        ]
+        {
+          if              
+          [
+            litNybArrayRead int $384
+            pushImmed       $0
+            eq              
+            retVar          
+          ]
+          {
+            op18            
+            (
+              [
+                pushInt         $CC
+                retVar          
+              ]
+            )
+            ret             
+          }
+          else            
+          if              
+          [
+            litNybArrayRead int $384
+            pushImmed       $1
+            eq              
+            retVar          
+          ]
+          {
+            op18            
+            (
+              [
+                pushInt         $EE
+                retVar          
+              ]
+            )
+            ret             
+          }
+          else            
+          if              
+          [
+            litNybArrayRead int $384
+            pushImmed       $2
+            eq              
+            retVar          
+          ]
+          {
+            op18            
+            (
+              [
+                pushInt         $55
+                retVar          
+              ]
+            )
+            ret             
+          }
+          else            
+          if              
+          [
+            litNybArrayRead int $384
+            pushImmed       $3
+            eq              
+            retVar          
+          ]
+          {
+            op18            
+            (
+              [
+                pushInt         $BB
+                retVar          
+              ]
+            )
+            ret             
+          }
+          else            
+          if              
+          [
+            litNybArrayRead int $384
+            pushImmed       $4
+            eq              
+            retVar          
+          ]
+          {
+            op18            
+            (
+              [
+                pushInt         $FF
+                retVar          
+              ]
+            )
+            ret             
+          }
+          func_op18       
+          (
+            [
+              pushImmed       $1
+              pushShort       $10
+              add             
+              retVar          
+            ]
+            [
+              pushInt         $78
+              pushArrayWord   $0
+              pushShort       $17
+              readWordArray   
+              pushShort       $10
+              mul             
+              add             
+              pushShort       $10
+              sub             
+              pushImmed       $1
+              sub             
+              retVar          
+            ]
+            [
+              pushImmed       $B
+              pushShort       $10
+              add             
+              retVar          
+            ]
+            [
+              pushInt         $78
+              pushArrayWord   $0
+              pushShort       $17
+              readWordArray   
+              pushShort       $10
+              mul             
+              add             
+              pushShort       $10
+              sub             
+              pushImmed       $E
+              add             
+              pushImmed       $1
+              sub             
+              retVar          
+            ]
+          )
+          ret             
+        }
+      )
+      setFunc         
+      (
+        [
+          pushShort       $1F
+          retVar          
+        ]
+        {
+          ret             
+        }
+      )
+      setFunc         
+      (
+        [
+          pushShort       $20
+          retVar          
+        ]
+        {
+          callFunc        
+          (
+            [
+              pushShort       $1E
+              retVar          
+            ]
+          )
+          writeArrayWords $0
+            [
+              pushShort       $1B
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $0
+              retVar          
+            ]
+          )
+          writeValueWord  $13
+          [
+            pushArrayWord   $0
+            pushShort       $17
+            readWordArray   
+            retVar          
+          ]
+          ret             
+        }
+      )
+      setFunc         
+      (
+        [
+          pushShort       $21
+          retVar          
+        ]
+        {
+          callFunc        
+          (
+            [
+              pushShort       $1E
+              retVar          
+            ]
+          )
+          writeArrayWords $0
+            [
+              pushShort       $1B
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $0
+              retVar          
+            ]
+          )
+          writeValueWord  $13
+          [
+            pushImmed       $0
+            retVar          
+          ]
+          ret             
+        }
+      )
+      setFunc         
+      (
+        [
+          pushShort       $22
+          retVar          
+        ]
+        {
+          callFunc        
+          (
+            [
+              pushShort       $1E
+              retVar          
+            ]
+          )
+          writeArrayWords $0
+            [
+              pushShort       $17
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          callFunc        
+          (
+            [
+              pushShort       $1E
+              retVar          
+            ]
+          )
+          ret             
+        }
+      )
+      setFunc         
+      (
+        [
+          pushShort       $23
+          retVar          
+        ]
+        {
+          callFunc        
+          (
+            [
+              pushShort       $1E
+              retVar          
+            ]
+          )
+          writeArrayWords $0
+            [
+              pushShort       $17
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $2
+              retVar          
+            ]
+          )
+          callFunc        
+          (
+            [
+              pushShort       $1E
+              retVar          
+            ]
+          )
+          ret             
+        }
+      )
+      setFunc         
+      (
+        [
+          pushShort       $24
+          retVar          
+        ]
+        {
+          ret             
+        }
+      )
+      setFunc         
+      (
+        [
+          pushShort       $25
+          retVar          
+        ]
+        {
+          ret             
+        }
+      )
+      setFunc         
+      (
+        [
+          pushShort       $26
+          retVar          
+        ]
+        {
+          writeArrayWords $0
+            [
+              pushShort       $17
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          callFunc        
+          (
+            [
+              pushShort       $1E
+              retVar          
+            ]
+          )
+          ret             
+        }
+      )
+      setFunc         
+      (
+        [
+          pushShort       $27
+          retVar          
+        ]
+        {
+          ret             
+        }
+      )
+      setFunc         
+      (
+        [
+          pushShort       $29
+          retVar          
+        ]
+        {
+          ret             
+        }
+      )
+      dlgChoice       
+      (
+        {
+          ret             
+        }
+      )
+      ret             
+    }
+  )
+  setFunc         
+  (
+    [
+      pushImmed       $B
+      retVar          
+    ]
+    {
+      writeArrayWords $0
+        [
+          pushShort       $11
+          retVar          
+        ]
+      (
+        [
+          pushInt         $40
+          pushImmed       $C
+          pushImmed       $E
+          mul             
+          add             
+          retVar          
+        ]
+        [
+          pushInt         $A4
+          retVar          
+        ]
+      )
+      <MSG_0> // ▼
+      ret             
+    }
+  )
+  setFunc         
+  (
+    [
+      pushImmed       $C
+      retVar          
+    ]
+    {
+      if              
+      [
+        pushArrayWord   $0
+        pushImmed       $C
+        readWordArray   
+        pushImmed       $2
+        and             
+        pushImmed       $0
+        eq              
+        retVar          
+      ]
+      {
+        func_op1A       
+        (
+          [
+            pushImmed       $2
+            retVar          
+          ]
+        )
+        ret             
+      }
+      callFunc        
+      (
+        [
+          pushImmed       $B
+          retVar          
+        ]
+      )
+      op11            
+      (
+      )
+      ret             
+    }
+  )
+  setFunc         
+  (
+    [
+      pushImmed       $D
+      retVar          
+    ]
+    {
+      writeValueWord  $1A
+      [
+        pushImmed       $0
+        retVar          
+      ]
+      func_op26       
+      (
+        {
+          if              
+          [
+            pushArrayWord   $1A
+            pushImmed       $0
+            eq              
+            retVar          
+          ]
+          {
+            writeArrayWords $0
+              [
+                pushImmed       $7
+                retVar          
+              ]
+            (
+              [
+                pushImmed       $1
+                retVar          
+              ]
+            )
+            writeArrayWords $0
+              [
+                pushShort       $21
+                retVar          
+              ]
+            (
+              [
+                pushLong        $FFFF
+                retVar          
+              ]
+            )
+            writeArrayWords $0
+              [
+                pushShort       $23
+                retVar          
+              ]
+            (
+              [
+                pushImmed       $0
+                retVar          
+              ]
+            )
+            op19            
+            (
+              [
+                pushImmed       $4
+                retVar          
+              ]
+              [
+                pushLong        $4000
+                pushImmed       $4
+                add             
+                pushInt         $200
+                add             
+                pushShort       $20
+                pushShort       $1C
+                mul             
+                add             
+                retVar          
+              ]
+              [
+                pushLong        $7000
+                retVar          
+              ]
+              [
+                pushLong        $2000
+                pushLong        $7000
+                litNybArrayRead immed $0
+                mul             
+                add             
+                pushImmed       $2
+                div             
+                retVar          
+              ]
+            )
+            op19            
+            (
+              [
+                pushImmed       $E
+                retVar          
+              ]
+              [
+                pushLong        $4000
+                pushImmed       $4
+                add             
+                retVar          
+              ]
+            )
+            op19            
+            (
+              [
+                pushImmed       $D
+                retVar          
+              ]
+              [
+                pushImmed       $0
+                retVar          
+              ]
+              [
+                pushImmed       $0
+                retVar          
+              ]
+              [
+                pushShort       $20
+                retVar          
+              ]
+              [
+                pushShort       $1C
+                retVar          
+              ]
+              [
+                pushLong        $4000
+                pushImmed       $4
+                add             
+                pushInt         $200
+                add             
+                retVar          
+              ]
+              [
+                pushInt         $100
+                pushInt         $380
+                litNybArrayRead immed $0
+                mul             
+                add             
+                retVar          
+              ]
+            )
+            writeNybsLit    immed $0
+            (
+              [
+                litNybArrayRead immed $0
+                pushImmed       $1
+                add             
+                pushImmed       $1
+                and             
+                retVar          
+              ]
+            )
+            ret             
+          }
+          if              
+          [
+            pushArrayWord   $1A
+            pushImmed       $A
+            eq              
+            retVar          
+          ]
+          {
+            writeArrayWords $0
+              [
+                pushImmed       $7
+                retVar          
+              ]
+            (
+              [
+                pushImmed       $2
+                retVar          
+              ]
+            )
+            writeArrayWords $0
+              [
+                pushShort       $21
+                retVar          
+              ]
+            (
+              [
+                pushLong        $FFFF
+                retVar          
+              ]
+            )
+            writeArrayWords $0
+              [
+                pushShort       $23
+                retVar          
+              ]
+            (
+              [
+                pushImmed       $0
+                retVar          
+              ]
+            )
+            op19            
+            (
+              [
+                pushImmed       $4
+                retVar          
+              ]
+              [
+                pushLong        $4000
+                pushImmed       $4
+                add             
+                pushInt         $200
+                add             
+                pushShort       $20
+                pushShort       $1C
+                mul             
+                add             
+                retVar          
+              ]
+              [
+                pushLong        $7000
+                retVar          
+              ]
+              [
+                pushLong        $2000
+                pushLong        $7000
+                litNybArrayRead immed $0
+                mul             
+                add             
+                pushImmed       $2
+                div             
+                retVar          
+              ]
+            )
+            op19            
+            (
+              [
+                pushImmed       $E
+                retVar          
+              ]
+              [
+                pushLong        $4000
+                pushImmed       $4
+                add             
+                retVar          
+              ]
+            )
+            op19            
+            (
+              [
+                pushImmed       $D
+                retVar          
+              ]
+              [
+                pushImmed       $0
+                retVar          
+              ]
+              [
+                pushImmed       $0
+                retVar          
+              ]
+              [
+                pushShort       $20
+                retVar          
+              ]
+              [
+                pushShort       $1C
+                retVar          
+              ]
+              [
+                pushLong        $4000
+                pushImmed       $4
+                add             
+                pushInt         $200
+                add             
+                retVar          
+              ]
+              [
+                pushInt         $100
+                pushInt         $380
+                litNybArrayRead immed $0
+                mul             
+                add             
+                retVar          
+              ]
+            )
+            writeNybsLit    immed $0
+            (
+              [
+                litNybArrayRead immed $0
+                pushImmed       $1
+                add             
+                pushImmed       $1
+                and             
+                retVar          
+              ]
+            )
+            ret             
+          }
+          writeValueWord  $1A
+          [
+            pushArrayWord   $1A
+            pushImmed       $1
+            add             
+            retVar          
+          ]
+          if              
+          [
+            pushArrayWord   $1A
+            pushShort       $14
+            lt              
+            retVar          
+          ]
+          {
+            writeValueWord  $1A
+            [
+              pushImmed       $0
+              retVar          
+            ]
+            ret             
+          }
+          ret             
+        }
+      )
+      ret             
+    }
+  )
+  setFunc         
+  (
+    [
+      pushImmed       $E
+      retVar          
+    ]
+    {
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $0
+        lt              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushShort       $21
+            retVar          
+          ]
+        (
+          [
+            pushLong        $FFFF
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushShort       $23
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        op19            
+        (
+          [
+            pushImmed       $4
+            retVar          
+          ]
+          [
+            pushLong        $4000
+            pushImmed       $4
+            add             
+            pushInt         $200
+            add             
+            pushShort       $20
+            pushShort       $1C
+            mul             
+            add             
+            retVar          
+          ]
+          [
+            pushLong        $7000
+            retVar          
+          ]
+          [
+            pushLong        $2000
+            pushLong        $7000
+            litNybArrayRead immed $0
+            mul             
+            add             
+            pushImmed       $2
+            div             
+            retVar          
+          ]
+        )
+        op19            
+        (
+          [
+            pushImmed       $E
+            retVar          
+          ]
+          [
+            pushLong        $4000
+            pushImmed       $4
+            add             
+            retVar          
+          ]
+        )
+        op19            
+        (
+          [
+            pushImmed       $D
+            retVar          
+          ]
+          [
+            pushImmed       $0
+            retVar          
+          ]
+          [
+            pushImmed       $0
+            retVar          
+          ]
+          [
+            pushShort       $20
+            retVar          
+          ]
+          [
+            pushShort       $1C
+            retVar          
+          ]
+          [
+            pushLong        $4000
+            pushImmed       $4
+            add             
+            pushInt         $200
+            add             
+            retVar          
+          ]
+          [
+            pushInt         $100
+            pushInt         $380
+            litNybArrayRead immed $0
+            mul             
+            add             
+            retVar          
+          ]
+        )
+        writeNybsLit    immed $0
+        (
+          [
+            litNybArrayRead immed $0
+            pushImmed       $1
+            add             
+            pushImmed       $1
+            and             
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $2
+            retVar          
+          ]
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $1
+        lt              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $2
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushShort       $21
+            retVar          
+          ]
+        (
+          [
+            pushLong        $FFFF
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushShort       $23
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        op19            
+        (
+          [
+            pushImmed       $4
+            retVar          
+          ]
+          [
+            pushLong        $4000
+            pushImmed       $4
+            add             
+            pushInt         $200
+            add             
+            pushShort       $20
+            pushShort       $1C
+            mul             
+            add             
+            retVar          
+          ]
+          [
+            pushLong        $7000
+            retVar          
+          ]
+          [
+            pushLong        $2000
+            pushLong        $7000
+            litNybArrayRead immed $0
+            mul             
+            add             
+            pushImmed       $2
+            div             
+            retVar          
+          ]
+        )
+        op19            
+        (
+          [
+            pushImmed       $E
+            retVar          
+          ]
+          [
+            pushLong        $4000
+            pushImmed       $4
+            add             
+            retVar          
+          ]
+        )
+        op19            
+        (
+          [
+            pushImmed       $D
+            retVar          
+          ]
+          [
+            pushImmed       $0
+            retVar          
+          ]
+          [
+            pushImmed       $0
+            retVar          
+          ]
+          [
+            pushShort       $20
+            retVar          
+          ]
+          [
+            pushShort       $1C
+            retVar          
+          ]
+          [
+            pushLong        $4000
+            pushImmed       $4
+            add             
+            pushInt         $200
+            add             
+            retVar          
+          ]
+          [
+            pushInt         $100
+            pushInt         $380
+            litNybArrayRead immed $0
+            mul             
+            add             
+            retVar          
+          ]
+        )
+        writeNybsLit    immed $0
+        (
+          [
+            litNybArrayRead immed $0
+            pushImmed       $1
+            add             
+            pushImmed       $1
+            and             
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $2
+            retVar          
+          ]
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $2
+        lt              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushShort       $21
+            retVar          
+          ]
+        (
+          [
+            pushLong        $FFFF
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushShort       $23
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        op19            
+        (
+          [
+            pushImmed       $4
+            retVar          
+          ]
+          [
+            pushLong        $4000
+            pushImmed       $4
+            add             
+            pushInt         $200
+            add             
+            pushShort       $20
+            pushShort       $1C
+            mul             
+            add             
+            retVar          
+          ]
+          [
+            pushLong        $7000
+            retVar          
+          ]
+          [
+            pushLong        $2000
+            pushLong        $7000
+            litNybArrayRead immed $0
+            mul             
+            add             
+            pushImmed       $2
+            div             
+            retVar          
+          ]
+        )
+        op19            
+        (
+          [
+            pushImmed       $E
+            retVar          
+          ]
+          [
+            pushLong        $4000
+            pushImmed       $4
+            add             
+            retVar          
+          ]
+        )
+        op19            
+        (
+          [
+            pushImmed       $D
+            retVar          
+          ]
+          [
+            pushImmed       $0
+            retVar          
+          ]
+          [
+            pushImmed       $0
+            retVar          
+          ]
+          [
+            pushShort       $20
+            retVar          
+          ]
+          [
+            pushShort       $1C
+            retVar          
+          ]
+          [
+            pushLong        $4000
+            pushImmed       $4
+            add             
+            pushInt         $200
+            add             
+            retVar          
+          ]
+          [
+            pushInt         $100
+            pushInt         $380
+            litNybArrayRead immed $0
+            mul             
+            add             
+            retVar          
+          ]
+        )
+        writeNybsLit    immed $0
+        (
+          [
+            litNybArrayRead immed $0
+            pushImmed       $1
+            add             
+            pushImmed       $1
+            and             
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $2
+            retVar          
+          ]
+        )
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $9
+        pushImmed       $3
+        lt              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $4
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushShort       $21
+            retVar          
+          ]
+        (
+          [
+            pushLong        $FFFF
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushShort       $23
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        op19            
+        (
+          [
+            pushImmed       $4
+            retVar          
+          ]
+          [
+            pushLong        $4000
+            pushImmed       $4
+            add             
+            pushInt         $200
+            add             
+            pushShort       $20
+            pushShort       $1C
+            mul             
+            add             
+            retVar          
+          ]
+          [
+            pushLong        $7000
+            retVar          
+          ]
+          [
+            pushLong        $2000
+            pushLong        $7000
+            litNybArrayRead immed $0
+            mul             
+            add             
+            pushImmed       $2
+            div             
+            retVar          
+          ]
+        )
+        op19            
+        (
+          [
+            pushImmed       $E
+            retVar          
+          ]
+          [
+            pushLong        $4000
+            pushImmed       $4
+            add             
+            retVar          
+          ]
+        )
+        op19            
+        (
+          [
+            pushImmed       $D
+            retVar          
+          ]
+          [
+            pushImmed       $0
+            retVar          
+          ]
+          [
+            pushImmed       $0
+            retVar          
+          ]
+          [
+            pushShort       $20
+            retVar          
+          ]
+          [
+            pushShort       $1C
+            retVar          
+          ]
+          [
+            pushLong        $4000
+            pushImmed       $4
+            add             
+            pushInt         $200
+            add             
+            retVar          
+          ]
+          [
+            pushInt         $100
+            pushInt         $380
+            litNybArrayRead immed $0
+            mul             
+            add             
+            retVar          
+          ]
+        )
+        writeNybsLit    immed $0
+        (
+          [
+            litNybArrayRead immed $0
+            pushImmed       $1
+            add             
+            pushImmed       $1
+            and             
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushImmed       $2
+            retVar          
+          ]
+        )
+        ret             
+      }
+      ret             
+    }
+  )
+  setFunc         
+  (
+    [
+      pushImmed       $F
+      retVar          
+    ]
+    {
+      if              
+      [
+        litNybArrayRead immed $A
+        pushImmed       $0
+        eq              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $9
+            retVar          
+          ]
+        (
+          [
+            pushArrayWord   $0
+            pushImmed       $9
+            readWordArray   
+            pushLong        $FFFE
+            and             
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushShort       $21
+            retVar          
+          ]
+        (
+          [
+            pushLong        $FFFF
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushShort       $23
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        func_op16       
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        func_op24       
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $0
+          eq              
+          retVar          
+        ]
+        {
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "e5.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $2
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "e6.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $1
+          eq              
+          retVar          
+        ]
+        {
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "e7.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $2
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "e8.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $2
+          eq              
+          retVar          
+        ]
+        {
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "e1.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $2
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "e2.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $3
+          eq              
+          retVar          
+        ]
+        {
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "e3.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $2
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "e4.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $4
+          eq              
+          retVar          
+        ]
+        {
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "e9.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          writeArrayWords $0
+            [
+              pushImmed       $7
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $2
+              retVar          
+            ]
+          )
+          loadFile        
+          (
+            "e10.heb"
+            [
+              pushLong        $4000
+              retVar          
+            ]
+          )
+          ret             
+        }
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $0
+          eq              
+          retVar          
+        ]
+        {
+          op18            
+          (
+            [
+              pushShort       $3F
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $1
+          eq              
+          retVar          
+        ]
+        {
+          op18            
+          (
+            [
+              pushShort       $1F
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $2
+          eq              
+          retVar          
+        ]
+        {
+          op18            
+          (
+            [
+              pushInt         $41
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $3
+          eq              
+          retVar          
+        ]
+        {
+          op18            
+          (
+            [
+              pushInt         $4F
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $4
+          eq              
+          retVar          
+        ]
+        {
+          op18            
+          (
+            [
+              pushImmed       $F
+              retVar          
+            ]
+          )
+          ret             
+        }
+        writeArrayWords $0
+          [
+            pushImmed       $D
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+          [
+            pushImmed       $0
+            retVar          
+          ]
+          [
+            pushShort       $1F
+            retVar          
+          ]
+          [
+            pushInt         $DF
+            retVar          
+          ]
+        )
+        op17            
+        (
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        writeNybsLit    immed $0
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $9
+            retVar          
+          ]
+        )
+        writeValueWord  $9
+        [
+          pushImmed       $E
+          retVar          
+        ]
+        callFunc        
+        (
+          [
+            pushImmed       $5
+            retVar          
+          ]
+        )
+        func_op16       
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushInt         $78
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $2
+            retVar          
+          ]
+        )
+        writeNybsLit    immed $1
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $9
+            retVar          
+          ]
+        )
+        op16            
+        (
+          [
+            pushInt         $64
+            retVar          
+          ]
+        )
+        func_op24       
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushShort       $11
+            retVar          
+          ]
+        (
+          [
+            pushShort       $12
+            pushInt         $80
+            add             
+            retVar          
+          ]
+          [
+            pushInt         $64
+            retVar          
+          ]
+        )
+        <MSG_1> // セーブする？
+        writeArrayWords $0
+          [
+            pushShort       $11
+            retVar          
+          ]
+        (
+          [
+            pushShort       $12
+            pushInt         $80
+            add             
+            retVar          
+          ]
+          [
+            pushInt         $78
+            retVar          
+          ]
+        )
+        <MSG_2> // 　ＹＥＳ
+        writeArrayWords $0
+          [
+            pushShort       $11
+            retVar          
+          ]
+        (
+          [
+            pushShort       $13
+            pushInt         $80
+            add             
+            retVar          
+          ]
+          [
+            pushInt         $88
+            retVar          
+          ]
+        )
+        <MSG_3> // 　ＮＯ
+        callFunc        
+        (
+          [
+            pushImmed       $A
+            retVar          
+          ]
+        )
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $0
+          eq              
+          retVar          
+        ]
+        {
+          op18            
+          (
+            [
+              pushImmed       $3
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $1
+          eq              
+          retVar          
+        ]
+        {
+          op18            
+          (
+            [
+              pushImmed       $1
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $2
+          eq              
+          retVar          
+        ]
+        {
+          op18            
+          (
+            [
+              pushImmed       $4
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $3
+          eq              
+          retVar          
+        ]
+        {
+          op18            
+          (
+            [
+              pushImmed       $4
+              retVar          
+            ]
+          )
+          ret             
+        }
+        else            
+        if              
+        [
+          litNybArrayRead int $384
+          pushImmed       $4
+          eq              
+          retVar          
+        ]
+        {
+          op18            
+          (
+            [
+              pushImmed       $0
+              retVar          
+            ]
+          )
+          ret             
+        }
+        writeArrayWords $0
+          [
+            pushShort       $11
+            retVar          
+          ]
+        (
+          [
+            pushShort       $12
+            pushInt         $80
+            add             
+            retVar          
+          ]
+          [
+            pushInt         $64
+            retVar          
+          ]
+        )
+        <MSG_4> // セーブする？
+        writeArrayWords $0
+          [
+            pushShort       $11
+            retVar          
+          ]
+        (
+          [
+            pushShort       $12
+            pushInt         $80
+            add             
+            retVar          
+          ]
+          [
+            pushInt         $78
+            retVar          
+          ]
+        )
+        <MSG_5> // 　ＹＥＳ
+        writeArrayWords $0
+          [
+            pushShort       $11
+            retVar          
+          ]
+        (
+          [
+            pushShort       $13
+            pushInt         $80
+            add             
+            retVar          
+          ]
+          [
+            pushInt         $88
+            retVar          
+          ]
+        )
+        <MSG_6> // 　ＮＯ
+        if              
+        [
+          pushArrayWord   $13
+          pushImmed       $1
+          eq              
+          retVar          
+        ]
+        {
+          if              
+          [
+            litNybArrayRead int $384
+            pushImmed       $0
+            eq              
+            retVar          
+          ]
+          {
+            op18            
+            (
+              [
+                pushShort       $3F
+                retVar          
+              ]
+            )
+            ret             
+          }
+          else            
+          if              
+          [
+            litNybArrayRead int $384
+            pushImmed       $1
+            eq              
+            retVar          
+          ]
+          {
+            op18            
+            (
+              [
+                pushShort       $1F
+                retVar          
+              ]
+            )
+            ret             
+          }
+          else            
+          if              
+          [
+            litNybArrayRead int $384
+            pushImmed       $2
+            eq              
+            retVar          
+          ]
+          {
+            op18            
+            (
+              [
+                pushInt         $41
+                retVar          
+              ]
+            )
+            ret             
+          }
+          else            
+          if              
+          [
+            litNybArrayRead int $384
+            pushImmed       $3
+            eq              
+            retVar          
+          ]
+          {
+            op18            
+            (
+              [
+                pushInt         $4F
+                retVar          
+              ]
+            )
+            ret             
+          }
+          else            
+          if              
+          [
+            litNybArrayRead int $384
+            pushImmed       $4
+            eq              
+            retVar          
+          ]
+          {
+            op18            
+            (
+              [
+                pushImmed       $F
+                retVar          
+              ]
+            )
+            ret             
+          }
+          writeArrayWords $0
+            [
+              pushShort       $11
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $A
+              pushInt         $80
+              add             
+              retVar          
+            ]
+            [
+              pushInt         $64
+              retVar          
+            ]
+          )
+          <MSG_7> // 何番にする？
+          writeArrayWords $0
+            [
+              pushShort       $11
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $A
+              pushInt         $80
+              add             
+              retVar          
+            ]
+            [
+              pushInt         $78
+              retVar          
+            ]
+          )
+          <MSG_8> // １番にセーブ
+          writeArrayWords $0
+            [
+              pushShort       $11
+              retVar          
+            ]
+          (
+            [
+              pushImmed       $A
+              pushInt         $80
+              add             
+              retVar          
+            ]
+            [
+              pushInt         $88
+              retVar          
+            ]
+          )
+          <MSG_9> // ２番にセーブ
+          callFunc        
+          (
+            [
+              pushImmed       $A
+              retVar          
+            ]
+          )
+          if              
+          [
+            pushArrayWord   $13
+            pushImmed       $1
+            eq              
+            retVar          
+          ]
+          {
+            writeNybsLit    immed $A
+            (
+              [
+                pushImmed       $1
+                retVar          
+              ]
+            )
+            func_op21       
+            (
+              [
+                pushImmed       $1
+                retVar          
+              ]
+              [
+                pushImmed       $0
+                retVar          
+              ]
+            )
+            ret             
+          }
+          else            
+          if              
+          [
+            pushArrayWord   $13
+            pushImmed       $2
+            eq              
+            retVar          
+          ]
+          {
+            writeNybsLit    immed $A
+            (
+              [
+                pushImmed       $1
+                retVar          
+              ]
+            )
+            func_op21       
+            (
+              [
+                pushImmed       $1
+                retVar          
+              ]
+              [
+                pushImmed       $1
+                retVar          
+              ]
+            )
+            ret             
+          }
+          ret             
+        }
+        ret             
+      }
+      writeNybsLit    immed $A
+      (
+        [
+          pushImmed       $0
+          retVar          
+        ]
+      )
+      func_op16       
+      (
+        [
+          pushImmed       $3
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+      )
+      writeValueWord  $9
+      [
+        pushImmed       $0
+        retVar          
+      ]
+      callFunc        
+      (
+        [
+          pushImmed       $6
+          retVar          
+        ]
+      )
+      ret             
+    }
+  )
+  setFunc         
+  (
+    [
+      pushShort       $10
+      retVar          
+    ]
+    {
+      func_op16       
+      (
+        [
+          pushImmed       $2
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $A
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushImmed       $7
+          retVar          
+        ]
+      (
+        [
+          pushImmed       $1
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushShort       $21
+          retVar          
+        ]
+      (
+        [
+          pushLong        $FFFF
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushShort       $23
+          retVar          
+        ]
+      (
+        [
+          pushImmed       $0
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $E
+          retVar          
+        ]
+        [
+          pushLong        $4000
+          pushImmed       $4
+          add             
+          retVar          
+        ]
+      )
+      writeNybsLit    immed $0
+      (
+        [
+          pushImmed       $0
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $4
+          retVar          
+        ]
+        [
+          pushLong        $4000
+          pushImmed       $4
+          add             
+          pushInt         $200
+          add             
+          pushShort       $20
+          pushShort       $1C
+          mul             
+          add             
+          retVar          
+        ]
+        [
+          pushLong        $7000
+          retVar          
+        ]
+        [
+          pushLong        $2000
+          pushLong        $7000
+          litNybArrayRead immed $0
+          mul             
+          add             
+          pushImmed       $2
+          div             
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $C
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushShort       $20
+          retVar          
+        ]
+        [
+          pushShort       $1C
+          retVar          
+        ]
+        [
+          pushLong        $4000
+          pushImmed       $4
+          add             
+          pushInt         $200
+          add             
+          retVar          
+        ]
+        [
+          pushInt         $100
+          pushInt         $380
+          litNybArrayRead immed $0
+          mul             
+          add             
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushImmed       $7
+          retVar          
+        ]
+      (
+        [
+          pushImmed       $2
+          retVar          
+        ]
+      )
+      writeNybsLit    immed $0
+      (
+        [
+          pushImmed       $1
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $4
+          retVar          
+        ]
+        [
+          pushLong        $4000
+          pushImmed       $4
+          add             
+          pushInt         $200
+          add             
+          pushShort       $20
+          pushShort       $1C
+          mul             
+          add             
+          retVar          
+        ]
+        [
+          pushLong        $7000
+          retVar          
+        ]
+        [
+          pushLong        $2000
+          pushLong        $7000
+          litNybArrayRead immed $0
+          mul             
+          add             
+          pushImmed       $2
+          div             
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $C
+          retVar          
+        ]
+        [
+          pushShort       $20
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushShort       $20
+          retVar          
+        ]
+        [
+          pushShort       $1C
+          retVar          
+        ]
+        [
+          pushLong        $4000
+          pushImmed       $4
+          add             
+          pushInt         $200
+          add             
+          retVar          
+        ]
+        [
+          pushInt         $100
+          pushInt         $380
+          litNybArrayRead immed $0
+          mul             
+          add             
+          retVar          
+        ]
+      )
+      op19            
+      (
+        [
+          pushImmed       $C
+          retVar          
+        ]
+        [
+          pushImmed       $0
+          retVar          
+        ]
+        [
+          pushShort       $1C
+          retVar          
+        ]
+        [
+          pushShort       $20
+          retVar          
+        ]
+        [
+          pushShort       $1C
+          retVar          
+        ]
+        [
+          pushLong        $4000
+          pushImmed       $4
+          add             
+          pushInt         $200
+          add             
+          retVar          
+        ]
+        [
+          pushInt         $100
+          pushInt         $380
+          litNybArrayRead immed $0
+          mul             
+          add             
+          retVar          
+        ]
+      )
+      writeArrayWords $0
+        [
+          pushImmed       $7
+          retVar          
+        ]
+      (
+        [
+          pushImmed       $0
+          retVar          
+        ]
+      )
+      ret             
+    }
+  )
+  setFunc         
+  (
+    [
+      pushShort       $29
+      retVar          
+    ]
+    {
+      ret             
+    }
+  )
+  setFunc         
+  (
+    [
+      pushShort       $2A
+      retVar          
+    ]
+    {
+      ret             
+    }
+  )
+  callFunc        
+  (
+    [
+      pushImmed       $1
+      retVar          
+    ]
+  )
+  writeArrayWords $0
+    [
+      pushImmed       $7
+      retVar          
+    ]
+  (
+    [
+      pushImmed       $1
+      retVar          
+    ]
+  )
+  loadFile        
+  (
+    "e75"
+    [
+      pushLong        $4000
+      retVar          
+    ]
+  )
+  callFunc        
+  (
+    [
+      pushImmed       $7
+      retVar          
+    ]
+  )
+  <MSG_10> // 〔うさぎ〕％（これから、どうしようかしら？）
+  callFunc        
+  (
+    [
+      pushImmed       $C
+      retVar          
+    ]
+  )
+  callFunc        
+  (
+    [
+      pushImmed       $0
+      retVar          
+    ]
+  )
+  dlgChoice       
+  (
+    {
+      <MSG_11> // 元基をさがす
+      ret02           
+    }
+    {
+      <MSG_12> // 美奈子をさがす
+      ret02           
+    }
+    {
+      <MSG_13> // レイをさがす
+      ret             
+    }
+  )
+  if              
+  [
+    pushArrayWord   $13
+    pushImmed       $1
+    eq              
+    retVar          
+  ]
+  {
+    <MSG_14> // 〔うさぎ〕％（ちょっと疲れちゃったな　そうだ、ゲームはこれで終
+    callFunc        
+    (
+      [
+        pushImmed       $C
+        retVar          
+      ]
+    )
+    <MSG_15> // 〔うさぎ〕％わりにして、元基お兄さんとお話でもしよっと）
+    callFunc        
+    (
+      [
+        pushImmed       $C
+        retVar          
+      ]
+    )
+    writeArrayWords $0
+      [
+        pushImmed       $7
+        retVar          
+      ]
+    (
+      [
+        pushImmed       $1
+        retVar          
+      ]
+    )
+    loadFile        
+    (
+      "e75a"
+      [
+        pushLong        $4000
+        retVar          
+      ]
+    )
+    writeArrayWords $0
+      [
+        pushImmed       $7
+        retVar          
+      ]
+    (
+      [
+        pushImmed       $1
+        retVar          
+      ]
+    )
+    loadFile        
+    (
+      "e75b"
+      [
+        pushLong        $8000
+        retVar          
+      ]
+    )
+    writeValueWord  $9
+    [
+      pushImmed       $2
+      retVar          
+    ]
+    callFunc        
+    (
+      [
+        pushImmed       $2
+        retVar          
+      ]
+    )
+    <MSG_16> // 〔うさぎ〕％元基お兄さんいないみたい
+    callFunc        
+    (
+      [
+        pushImmed       $C
+        retVar          
+      ]
+    )
+    callFunc        
+    (
+      [
+        pushImmed       $0
+        retVar          
+      ]
+    )
+    dlgChoice       
+    (
+      {
+        <MSG_17> // 再びセーラーＶをする
+        ret02           
+      }
+      {
+        <MSG_18> // 美奈子をさがす
+        ret02           
+      }
+      {
+        <MSG_19> // レイをさがす
+        ret             
+      }
+    )
+    ret             
+  }
+  ifThenWhile     $F
+    [
+      pushImmed       $1
+      pushImmed       $1
+      eq              
+      retVar          
+    ]
+    {
+      if              
+      [
+        pushArrayWord   $13
+        pushImmed       $1
+        eq              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e76"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        <MSG_20> // 〔うさぎ〕％うん！　やっぱりセーラーＶゲームよね！
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        <MSG_21> // 〔うさぎ〕％それっ！　よっ！
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        <MSG_22> // 〔うさぎ〕％うぅぅ……ああっ！！
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e76a"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e76b"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $2
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e76c"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        writeValueWord  $9
+        [
+          pushImmed       $3
+          retVar          
+        ]
+        callFunc        
+        (
+          [
+            pushImmed       $2
+            retVar          
+          ]
+        )
+        <MSG_23> // 〔ルナ〕％にゃああお
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        <MSG_24> // 〔うさぎ〕％ああっ！　おう！
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        <MSG_25> // 〔ルナ〕％にゃあああおぅ！！
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e75"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e75a"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $2
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e75b"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        writeValueWord  $9
+        [
+          pushImmed       $3
+          retVar          
+        ]
+        callFunc        
+        (
+          [
+            pushImmed       $2
+            retVar          
+          ]
+        )
+        <MSG_26> // 〔うさぎ〕％なによ、うっさいわねえ％どこのネコよ？
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        <MSG_27> // 〔うさぎ〕％……ネコ？
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        <MSG_28> // 〔ルナ〕％にゃあお！
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e113"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e113a"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        <MSG_29> // 〔うさぎ〕％ル……ルナ！？
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        return02        
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $13
+        pushImmed       $2
+        eq              
+        retVar          
+      ]
+      {
+        <MSG_30> // 〔うさぎ〕％そーいえば美奈子ちゃんは、何やってんだろ…？
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e78"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e78a"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e78b"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $2
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e78c"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $2
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e78d"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeValueWord  $9
+        [
+          pushImmed       $4
+          retVar          
+        ]
+        callFunc        
+        (
+          [
+            pushImmed       $2
+            retVar          
+          ]
+        )
+        <MSG_31> // 〔美奈子〕％…あっ、ああっ！　あーっ
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e79"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        <MSG_32> // 〔うさぎ〕％みんなのやってるゲームも楽しそうね……
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e79a"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        <MSG_33> // 〔美奈子〕％よしっ！％……いけっ！
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e79b"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        <MSG_34> // 〔美奈子〕％……あっ！％ああっ！
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        <MSG_35> // 〔美奈子〕％あーーーっ……
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        dlgChoice       
+        (
+          {
+            <MSG_36> // レイをさがす
+            ret02           
+          }
+          {
+            <MSG_37> // キャッチャーする
+            ret02           
+          }
+          {
+            <MSG_38> // やっぱりセーラーＶをやる
+            ret             
+          }
+        )
+        if              
+        [
+          pushArrayWord   $13
+          pushImmed       $1
+          eq              
+          retVar          
+        ]
+        {
+          writeValueWord  $13
+          [
+            pushImmed       $3
+            retVar          
+          ]
+          ret             
+        }
+        else            
+        if              
+        [
+          pushArrayWord   $13
+          pushImmed       $2
+          eq              
+          retVar          
+        ]
+        {
+          writeValueWord  $13
+          [
+            pushImmed       $4
+            retVar          
+          ]
+          ret             
+        }
+        else            
+        if              
+        [
+          pushArrayWord   $13
+          pushImmed       $3
+          eq              
+          retVar          
+        ]
+        {
+          writeValueWord  $13
+          [
+            pushImmed       $1
+            retVar          
+          ]
+          ret             
+        }
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $13
+        pushImmed       $3
+        eq              
+        retVar          
+      ]
+      {
+        <MSG_39> // 〔うさぎ〕％そーいえば、レイちゃんは、何やってんだろ…？
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e80"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        <MSG_40> // 〔レイ〕％おっと！％ぎぎぎぎぎ！
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        <MSG_41> // 〔レイ〕％よっ……％あっ！　あーーーーっ！！
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e80e"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e80f"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeValueWord  $9
+        [
+          pushImmed       $2
+          retVar          
+        ]
+        callFunc        
+        (
+          [
+            pushImmed       $2
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        <MSG_42> // 〔レイ〕％…ちぇっ、終わっちゃった
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        dlgChoice       
+        (
+          {
+            <MSG_43> // 美奈子をさがす
+            ret02           
+          }
+          {
+            <MSG_44> // シューティングする
+            ret02           
+          }
+          {
+            <MSG_45> // やっぱりセーラーＶをやる
+            ret             
+          }
+        )
+        if              
+        [
+          pushArrayWord   $13
+          pushImmed       $1
+          eq              
+          retVar          
+        ]
+        {
+          writeValueWord  $13
+          [
+            pushImmed       $2
+            retVar          
+          ]
+          ret             
+        }
+        else            
+        if              
+        [
+          pushArrayWord   $13
+          pushImmed       $2
+          eq              
+          retVar          
+        ]
+        {
+          writeValueWord  $13
+          [
+            pushImmed       $5
+            retVar          
+          ]
+          ret             
+        }
+        else            
+        if              
+        [
+          pushArrayWord   $13
+          pushImmed       $3
+          eq              
+          retVar          
+        ]
+        {
+          writeValueWord  $13
+          [
+            pushImmed       $1
+            retVar          
+          ]
+          ret             
+        }
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $13
+        pushImmed       $4
+        eq              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e81"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e81a"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p115"
+        )
+        <MSG_46> // 〔うさぎ〕％美奈子ちゃん、どう？％調子は？
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e82"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e82a"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p116"
+        )
+        <MSG_47> // 〔美奈子〕％うーー……それが全然だめなのーー。
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $4
+            retVar          
+          ]
+        )
+        <MSG_48> // 〔美奈子〕％うさぎちゃん、％やってみる？
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e83"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e83a"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e83b"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeValueWord  $9
+        [
+          pushImmed       $2
+          retVar          
+        ]
+        callFunc        
+        (
+          [
+            pushImmed       $2
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p117"
+        )
+        <MSG_49> // 〔うさぎ〕％ああ！％おっこっちゃったぁ！
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p118"
+        )
+        <MSG_50> // 〔美奈子〕％あーあ、もう少しだったのに……
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e83c"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p119"
+        )
+        <MSG_51> // 〔うさぎ〕％よーし、もう１回！
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p120"
+        )
+        <MSG_52> // 〔ルナ〕％ムダよ、うさぎちゃんは冷静さが要求されるゲームは
+        callFunc        
+        (
+          [
+            pushImmed       $4
+            retVar          
+          ]
+        )
+        <MSG_53> // 〔ルナ〕％だめなんだから
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e83d"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p121"
+        )
+        <MSG_54> // 〔うさぎ〕％ちょっと何よそれ！
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e83e"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p122"
+        )
+        <MSG_55> // 〔うさぎ〕％……って、今の声……
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p123"
+        )
+        <MSG_56> // 〔ルナ〕％ここよ、二人とも、覚悟はできているんでしょうね？
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e83f"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p124"
+        )
+        <MSG_57> // 〔うさぎ、美奈子〕％ル……ルナ！？
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        return02        
+        ret             
+      }
+      if              
+      [
+        pushArrayWord   $13
+        pushImmed       $5
+        eq              
+        retVar          
+      ]
+      {
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e84"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e84a"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p087"
+        )
+        <MSG_58> // 〔うさぎ〕％レーイちゃん！　…レイちゃん！　…レイちゃん？
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e84b"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e84c"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeValueWord  $9
+        [
+          pushImmed       $2
+          retVar          
+        ]
+        callFunc        
+        (
+          [
+            pushImmed       $2
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p088"
+        )
+        <MSG_59> // 〔レイ〕％ああーーーーーーーっ！！あーっ！！
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e85"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e85a"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p089"
+        )
+        <MSG_60> // 〔レイ〕％うさぎがうるさくするから気がちってやられちゃった
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $4
+            retVar          
+          ]
+        )
+        <MSG_61> // 〔レイ〕％じゃない！％どーしてくれんのよ！！
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e86"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e86a"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p090"
+        )
+        <MSG_62> // 〔うさぎ〕％だってぇ
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $4
+            retVar          
+          ]
+        )
+        <MSG_63> // 〔うさぎ〕％レイちゃん一人で夢中になっちゃってんだもん
+        callFunc        
+        (
+          [
+            pushImmed       $4
+            retVar          
+          ]
+        )
+        <MSG_64> // 〔うさぎ〕％あたしにもやらせてよー
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e87"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e87a"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p091"
+        )
+        <MSG_65> // 〔レイ〕％だいたいあんたはいつだってそう無神経なのよ！
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e88"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e88a"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p092"
+        )
+        <MSG_66> // 〔レイ〕％せっかく調子よくいってたのに、どーしてくれんのよ
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e89"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e89a"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p093"
+        )
+        <MSG_67> // 〔うさぎ〕％それってレイちゃんのウデが悪いだけじゃないのぉ？
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e90"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e90a"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p094"
+        )
+        <MSG_68> // 〔レイ〕％アーラ、じゃわたしの方があんたよりニブイってワケ
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e91"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p095"
+        )
+        <MSG_69> // 〔うさぎ〕％そーかもねー
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e88"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e88a"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p096"
+        )
+        <MSG_70> // 〔レイ〕％おもしろい！　じゃやって見せてもらおうじゃないの
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e92"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e92a"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p097"
+        )
+        <MSG_71> // 〔うさぎ〕％いーわよぅ、そこで見ててよ。あたしがゲームでレイ
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $4
+            retVar          
+          ]
+        )
+        <MSG_72> // 〔うさぎ〕％ちゃんに負けるわけないじゃない！
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e1143a"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $B
+            retVar          
+          ]
+        )
+        op16            
+        (
+        )
+        op17            
+        (
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e93"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $B
+            retVar          
+          ]
+        )
+        op16            
+        (
+        )
+        op17            
+        (
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e93a"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $B
+            retVar          
+          ]
+        )
+        op16            
+        (
+        )
+        op17            
+        (
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e93b"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $B
+            retVar          
+          ]
+        )
+        op16            
+        (
+        )
+        op17            
+        (
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e93c"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $B
+            retVar          
+          ]
+        )
+        op16            
+        (
+        )
+        op17            
+        (
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e93d"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p098"
+        )
+        <MSG_73> // 〔うさぎ〕％あーーーーーーーっ！％あふぁうううううおうおう
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e94"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e94a"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p099"
+        )
+        <MSG_74> // 〔レイ〕％あーら、ごめんね、うさぎこんなトコにコードがある
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $4
+            retVar          
+          ]
+        )
+        <MSG_75> // 〔レイ〕％なんて知らなかったのよ％ホーント
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e95"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e95a"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p100"
+        )
+        <MSG_76> // 〔うさぎ〕％レイちゃん、わざとやったでしょ！
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e96"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e96a"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p101"
+        )
+        <MSG_77> // 〔レイ〕％失礼ね！　なんでわたしがわざとそんなことするのよ
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e95"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e95a"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p102"
+        )
+        <MSG_78> // 〔うさぎ〕％負けそうだからわざとやったんだぁ！
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e96"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e96a"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p103"
+        )
+        <MSG_79> // 〔レイ〕％わたしがあんたなんかに負けるワケないでしょ！
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e95"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e95a"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p104"
+        )
+        <MSG_80> // 〔うさぎ〕％レイちゃんのずるっこ！
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e96"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e96a"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p106"
+        )
+        <MSG_81> // 〔レイ〕％違うっていってるでしょ！
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e97"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e97a"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p107"
+        )
+        <MSG_82> // 〔うさぎ〕％へんだ！　ベーーーーッ！
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p108"
+        )
+        <MSG_83> // 〔レイ〕％ふんだ！　ベベベのベーッ
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p109"
+        )
+        <MSG_84> // 〔うさぎ〕％ベベベのベ、ベ、べーー！
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p110"
+        )
+        <MSG_85> // 〔レイ〕％ベベベのべのべのべーー！
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p111"
+        )
+        <MSG_86> // 〔ルナ〕％いーかげんにしなさい！
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e97c"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p112"
+        )
+        <MSG_87> // 〔うさぎ〕％ベベベベベのベ、ベ…ベ？
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e98"
+          [
+            pushLong        $4000
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $1
+            retVar          
+          ]
+        )
+        loadFile        
+        (
+          "e98a"
+          [
+            pushLong        $8000
+            retVar          
+          ]
+        )
+        writeArrayWords $0
+          [
+            pushImmed       $7
+            retVar          
+          ]
+        (
+          [
+            pushImmed       $0
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p113"
+        )
+        <MSG_88> // 〔ルナ〕％特訓サボってもやってることは、かわんないのね
+        callFunc        
+        (
+          [
+            pushImmed       $3
+            retVar          
+          ]
+        )
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        playSound       
+        (
+          "p114"
+        )
+        <MSG_89> // 〔うさぎ、レイ〕％ル……ルナ！？
+        callFunc        
+        (
+          [
+            pushImmed       $C
+            retVar          
+          ]
+        )
+        return02        
+        ret             
+      }
+      ret             
+    }
+  loadAndRun      
+  (
+    "usagi044.mes"
+  )
+  ret             
+}

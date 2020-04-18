@@ -1,0 +1,30 @@
+
+current character is checked by "litNybArrayRead int $384"
+  - 0 = rei
+  - 1 = makoto
+  - 2 = usagi
+  - 3 = ami
+  - 4 = minako
+  (this corresponds to left-to-right order on the character select screen)
+
+shared text:
+- usagi, rei, makoto, minako plot to skip training: mako01, rei03
+  ----> separate
+- special training session: ami06, mako04, rei05
+  ----> unified under "train.mes"
+- ami/makoto discuss ~love~: ami08, mako04a
+  ----> separate. too many differences depending on character
+- shrine meeting: ami08/ami09, mako04a, rei05a, usagi05
+  ----> separate
+- usagi/makoto visit nephrite: mako08
+- luna on lookout: ami14, mako09, mina09
+  ----> unified: "lookout.mes"
+- shitenou attack nephrite: ami14, mako09, mina09
+  ----> unified: "nephatck.mes"
+- beryl gloats: ami14, mako09a, mina09a
+  ----> unified: "nephcapt.mes"
+- dark kingdom plot revealed: ami14a, mako09a, rei07, mina09a
+  ----> separate, except henshin stuff at end, which is unified as ami14b
+ 
+3.75
+
