@@ -19,15 +19,17 @@ fi;
 
 # honorifics flag.
 # 0 to disable, nonzero to enable
-HONORIFICS_FLAG=0
+#HONORIFICS_FLAG=0
 
 # --honorifics = honorifics on
 # --nohonorifics (or empty) = honorifics off
 HONORIFICS=--nohonorifics
-if [ ! $HONORIFICS_FLAG == 0 ]
+if [ ! $HONORIFICS_FLAG == "" ] && [ ! $HONORIFICS_FLAG -eq 0 ]
 then
   HONORIFICS=--honorifics
 fi
+
+echo "Honorifics flag: $HONORIFICS"
 
 # feature settings -- set to 0 to disable certain build steps (usually for testing)
 DO_BUILDFONT=1
