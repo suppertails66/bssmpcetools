@@ -1,0 +1,50 @@
+********************************************************************************
+*                  Bishoujo Senshi Sailor Moon (PC-Engine CD)                  *
+*                     English Translation Patch Materials                      *
+********************************************************************************
+
+This package contains the source materials (code/art/script) for the English translation project for the PC-Engine CD game Bishoujo Senshi Sailor Moon.
+
+                    ****************************************
+                    *          Build Instructions          *
+                    ****************************************
+                    
+The build system is only set up for Unix-like systems, though none of the code is fundamentally dependent on this and could be ported with a bit of effort. You'll need GCC and libpng, as well as any dependencies of wla-dx.
+
+You'll first need a disc image of Bishoujo Senshi Sailor Moon for the PC-Engine CD. The Redump-verified image is highly suggested, though other images may work if they're a close enough match.
+
+  Redump name: Bishoujo Senshi Sailor Moon
+  CRC32:       b318d9c2
+  MD5:         86a30b952b5bd70b1212f92fcca886a4
+  SHA-1:       868a40278c4e4ef2da9fa082dbdbba88966ea8c0
+
+The disc image must be in ISO+WAV+CUE format. If you need to convert from a different format, try using bchunk.
+
+Once you have an ISO+WAV+CUE image, rename the files such that every track is named as "bssm_01.wav", "bssm_02.wav", and so on up through "bssm_24.iso". Copy these files into the "bssmpce" directory. Then:
+
+$ cd bssmpce
+$ ./build.sh
+
+build.sh should then build all the necessary tools and output the translated ISO for track 24 as "bssm_24_build.iso". Use the provided "bssm_iso_build.cue" CUE sheet to run the built disc.
+
+The translation can be compiled with or without Japanese honorifics and terminology. This is controlled by the "HONORIFICS_FLAG" environment variable. Set it to 0 (or empty) for no honorifics, or nonzero to include them -- i.e. if you want honorifics, build with the command "HONORIFICS_FLAG=1 ./build.sh". This will also cause the original Japanese versions of images to be used instead of the translated versions.
+
+If you want to modify the project, check build.sh to see where the resources that get inserted into the game are coming from.
+
+                    ****************************************
+                    *              Licensing               *
+                    ****************************************
+
+See COPYING. Basically, everything by me (Supper) is GPLv3, and everything else
+is under the terms of whoever wrote it.
+
+                    ****************************************
+                    *               Credits                *
+                    ****************************************
+
+                        TheMajinZenki -- Translation
+                               Supper -- Hacking
+                               cccmar -- Editing and Testing
+                    William A. Braell -- Lyrics Translation
+                             Xanathis -- Testing
+
