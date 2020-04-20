@@ -292,7 +292,7 @@ mkdir -p out/spritesubs
 for folder in {rsrc/ending,rsrc/intro}; do
   foldername=$(basename $folder)
   destfolder=out/spritesubs/$foldername
-  mkdir -p destfolder
+  mkdir -p "$destfolder"
   
   for file in $folder/*.png; do
     echo $file
