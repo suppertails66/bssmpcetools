@@ -1,2 +1,5 @@
-10,,"","セーブできるところがありません。",""
-11,,"","バックアップメモリーの内容を削除してから、もう一度はじめてください。",""
+10,,,"セーブできるところがありません。",,"There is nowhere to put the save
+data."
+11,,,"バックアップメモリーの内容を削除してから、もう一度はじめてください。",,"Please delete the contents of the
+Backup Memory and start the game
+again."
